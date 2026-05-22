@@ -8,8 +8,8 @@ author: "Kriegspiel Team"
 tags: ["rules", "wild16", "wild-16"]
 draft: false
 lifecycle: published
-version: "1.0.1"
-revision: "rules-wild16-r4"
+version: "1.0.2"
+revision: "rules-wild16-r5"
 lastReviewedAt: "2026-05-22"
 changelogSlug: "2026-03-27-slice-940-trust-discoverability"
 ---
@@ -161,12 +161,6 @@ The referee or server determines checkmate and stalemate from the true hidden po
 
 A player does not need to know the full position for checkmate or stalemate to be declared.
 
----
-
-## Kriegspiel.org online implementation note
-
-The historical ICC-style rule above includes normal chess repetition and fifty-move draws. Kriegspiel.org currently uses a shared online endgame policy for Wild 16: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The rules engine does not currently offer player claims for threefold repetition or the fifty-move rule, and it does not apply automatic fivefold-repetition or seventy-five-move FIDE draws.
-
 ## 12. Observing and review
 
 Rated Kriegspiel games should not be observable while in progress, because an observer who sees both sides could provide outside information.
@@ -237,3 +231,9 @@ Cincinnati style gives only the existence of a pawn capture.
 The original Chessclub help page is no longer live, so retrieving it now requires the Wayback Machine or other archived copies. It was originally stored at `www.chessclub.com/help/Kriegspiel`.
 
 This version is adapted from archived copies of that help page and from [La Scacchiera Invisibile (PDF)](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf).
+
+---
+
+## Kriegspiel.org online implementation note
+
+The historical ICC-style rule above includes normal chess repetition and fifty-move draws. Kriegspiel.org currently uses a shared online endgame policy for Wild 16: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The rules engine does not currently offer player claims for threefold repetition or the fifty-move rule, and it does not apply automatic fivefold-repetition or seventy-five-move FIDE draws.

@@ -8,8 +8,8 @@ author: "Kriegspiel Team"
 tags: ["rules", "rand", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.2"
-revision: "rules-rand-r3"
+version: "1.0.3"
+revision: "rules-rand-r4"
 lastReviewedAt: "2026-05-22"
 ---
 
@@ -79,10 +79,10 @@ Standard chess rules apply, with the following additions and elucidations.
 
 20. For ladder games, the stalemate rule is currently modified: the stalemated player loses.
 
+*Original source: J. D. Williams, "Kriegsspiel rules at RAND", 1950. Via Paolo Ciancarini's [La Scacchiera Invisibile](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf).*
+
 ---
 
 ## Kriegspiel.org online implementation note
 
 The RAND rules allow a player to demand the count of the opponent's previous rebuffs or "no" answers. On Kriegspiel.org, RAND rebuffs are public in the referee log, so the count is visible from the log rather than exposed as a separate player action.
-
-*Original source: J. D. Williams, "Kriegsspiel rules at RAND", 1950. Via Paolo Ciancarini's [La Scacchiera Invisibile](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf).*
