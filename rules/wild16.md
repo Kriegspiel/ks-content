@@ -8,8 +8,8 @@ author: "Kriegspiel Team"
 tags: ["rules", "wild16", "wild-16"]
 draft: false
 lifecycle: published
-version: "1.0.2"
-revision: "rules-wild16-r5"
+version: "1.0.3"
+revision: "rules-wild16-r6"
 lastReviewedAt: "2026-05-22"
 changelogSlug: "2026-03-27-slice-940-trust-discoverability"
 ---
@@ -236,4 +236,4 @@ This version is adapted from archived copies of that help page and from [La Scac
 
 ## Kriegspiel.org online implementation note
 
-The historical ICC-style rule above includes normal chess repetition and fifty-move draws. Kriegspiel.org currently uses a shared online endgame policy for Wild 16: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The rules engine does not currently offer player claims for threefold repetition or the fifty-move rule, and it does not apply automatic fivefold-repetition or seventy-five-move FIDE draws.
+The historical ICC-style rule above includes normal chess repetition and fifty-move draws. Kriegspiel.org currently uses a shared online endgame policy for Wild 16: checkmate, stalemate, insufficient material, and a finite-game cap. If the half-move clock reaches 2,000 consecutive half-moves without a pawn move or capture, the game is declared drawn. The rules engine does not currently offer player claims for threefold repetition or the fifty-move rule, and it does not apply automatic fivefold-repetition or seventy-five-move FIDE draws.
