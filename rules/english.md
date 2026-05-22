@@ -8,8 +8,8 @@ author: "Kriegspiel Team"
 tags: ["rules", "english", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.2"
-revision: "rules-english-r3"
+version: "1.0.3"
+revision: "rules-english-r4"
 lastReviewedAt: "2026-05-22"
 ---
 
@@ -71,4 +71,4 @@ This transcription follows Appendix A, "Kriegspiel Rules at The Gambit", in Gian
 
 ## Kriegspiel.org online implementation note
 
-The draw clauses above preserve the historical Gambit Club text. Kriegspiel.org currently uses a shared online endgame policy for English games: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The site does not currently implement the special Gambit Club repeated-two-move draw clause as a separate rule.
+The draw clauses above preserve the historical Gambit Club text. Kriegspiel.org currently uses a shared online endgame policy for English games: checkmate, stalemate, insufficient material, and a finite-game cap. If the half-move clock reaches 2,000 consecutive half-moves without a pawn move or capture, the game is declared drawn. The site does not currently implement the special Gambit Club repeated-two-move draw clause as a separate rule.

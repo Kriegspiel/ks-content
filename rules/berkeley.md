@@ -8,8 +8,8 @@ author: "Kriegspiel Team"
 tags: ["rules", "berkeley"]
 draft: false
 lifecycle: published
-version: "1.0.1"
-revision: "rules-berkeley-r3"
+version: "1.0.2"
+revision: "rules-berkeley-r4"
 lastReviewedAt: "2026-05-22"
 changelogSlug: "2026-03-27-slice-940-trust-discoverability"
 ---
@@ -79,7 +79,7 @@ For the purpose of the checkmate problems we provide, positions with material fo
 
 ## Kriegspiel.org online implementation note
 
-The Berkeley text above intentionally excludes ordinary chess repetition and fifty-move draws. Kriegspiel.org follows that interpretation for Berkeley play, with one online-engine addition: a technical long-game cap for reversible play can declare a draw to keep games finite.
+The Berkeley text above intentionally excludes ordinary chess repetition and fifty-move draws. Kriegspiel.org follows that interpretation for Berkeley play, with one online-engine addition: if the half-move clock reaches 2,000 consecutive half-moves without a pawn move or capture, the game is declared drawn to keep games finite.
 
 ---
 
