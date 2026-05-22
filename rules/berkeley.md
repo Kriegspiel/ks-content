@@ -3,14 +3,14 @@ title: "Berkeley kriegspiel rules"
 slug: "berkeley"
 summary: "Classic referee calls: No/Nonsense, capture square, directional checks."
 publishedAt: "2026-03-27"
-updatedAt: "2026-04-12"
+updatedAt: "2026-05-22"
 author: "Kriegspiel Team"
 tags: ["rules", "berkeley"]
 draft: false
 lifecycle: published
-version: "1.0.0"
-revision: "rules-berkeley-r2"
-lastReviewedAt: "2026-04-12"
+version: "1.0.1"
+revision: "rules-berkeley-r3"
+lastReviewedAt: "2026-05-22"
 changelogSlug: "2026-03-27-slice-940-trust-discoverability"
 ---
 ## I. Introduction:
@@ -74,6 +74,12 @@ In fact, all of the above combinations of material can be used to force mate in 
 For the purpose of the checkmate problems we provide, positions with material forced checkmates (including epsilon checkmates) are considered to be immediate checkmate positions. To ensure that the opposing king cannot immediately capture the checkmating material, we only declare these positions to be checkmates when the player's king is protecting said material. For example, if a player can certainly reduce a position to KQvK with her king protecting her queen in one move, this is considered a forced checkmate in one move.
 
 *Taken from [w01lfe's Berkeley rules](http://w01fe.com/berkeley/kriegspiel/rules.html).*
+
+---
+
+## Kriegspiel.org online implementation note
+
+The Berkeley text above intentionally excludes ordinary chess repetition and fifty-move draws. Kriegspiel.org follows that interpretation for Berkeley play, with one online-engine addition: a technical long-game cap for reversible play can declare a draw to keep games finite.
 
 ---
 

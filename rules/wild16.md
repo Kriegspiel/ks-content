@@ -3,14 +3,14 @@ title: "Wild 16 / ICC kriegspiel rules"
 slug: "wild16"
 summary: "Detailed ICC-style kriegspiel rules: illegal attempts stay private, captures are typed, and pawn tries are announced as a count."
 publishedAt: "2026-03-27"
-updatedAt: "2026-04-19"
+updatedAt: "2026-05-22"
 author: "Kriegspiel Team"
 tags: ["rules", "wild16", "wild-16"]
 draft: false
 lifecycle: published
-version: "1.0.0"
-revision: "rules-wild16-r3"
-lastReviewedAt: "2026-04-19"
+version: "1.0.1"
+revision: "rules-wild16-r4"
+lastReviewedAt: "2026-05-22"
 changelogSlug: "2026-03-27-slice-940-trust-discoverability"
 ---
 Wild 16 is the Internet Chess Club version of Kriegspiel: chess with hidden information. Each player sees only their own pieces. The referee or server sees the full position and decides whether attempted moves are legal.
@@ -160,6 +160,12 @@ The game ends by normal chess conditions, including checkmate, stalemate, resign
 The referee or server determines checkmate and stalemate from the true hidden position.
 
 A player does not need to know the full position for checkmate or stalemate to be declared.
+
+---
+
+## Kriegspiel.org online implementation note
+
+The historical ICC-style rule above includes normal chess repetition and fifty-move draws. Kriegspiel.org currently uses a shared online endgame policy for Wild 16: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The rules engine does not currently offer player claims for threefold repetition or the fifty-move rule, and it does not apply automatic fivefold-repetition or seventy-five-move FIDE draws.
 
 ## 12. Observing and review
 

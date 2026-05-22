@@ -3,14 +3,14 @@ title: "English kriegspiel rules"
 slug: "english"
 summary: "The Gambit Club English rules: three boards, umpire-controlled legality, capture-square announcements, directional checks, and the classic Any? question."
 publishedAt: "2026-04-28"
-updatedAt: "2026-04-28"
+updatedAt: "2026-05-22"
 author: "Kriegspiel Team"
 tags: ["rules", "english", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.0"
-revision: "rules-english-r1"
-lastReviewedAt: "2026-04-28"
+version: "1.0.1"
+revision: "rules-english-r2"
+lastReviewedAt: "2026-05-22"
 ---
 
 These are the English rules enforced at the Gambit Club in London, as communicated by Miss E. C. Price and published in F. Dickens and G. White, *Chess in Bedfordshire*, Whitehead and Miller, Leeds, 1933.
@@ -60,6 +60,12 @@ These are the English rules enforced at the Gambit Club in London, as communicat
 13. The umpire shall not communicate or indicate to either of the players any detail or particular of the position of the pieces or the play except those permitted by the foregoing rules.
 
 14. The player that deliberately views the umpire's or his opponent's board and men shall forfeit the game.
+
+---
+
+## Kriegspiel.org online implementation note
+
+The draw clauses above preserve the historical Gambit Club text. Kriegspiel.org currently uses a shared online endgame policy for English games: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The site does not currently implement the special Gambit Club repeated-two-move draw clause as a separate rule.
 
 ## Source note
 
