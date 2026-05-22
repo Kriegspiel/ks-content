@@ -8,8 +8,8 @@ author: "Kriegspiel Team"
 tags: ["rules", "english", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.1"
-revision: "rules-english-r2"
+version: "1.0.2"
+revision: "rules-english-r3"
 lastReviewedAt: "2026-05-22"
 ---
 
@@ -61,14 +61,14 @@ These are the English rules enforced at the Gambit Club in London, as communicat
 
 14. The player that deliberately views the umpire's or his opponent's board and men shall forfeit the game.
 
----
-
-## Kriegspiel.org online implementation note
-
-The draw clauses above preserve the historical Gambit Club text. Kriegspiel.org currently uses a shared online endgame policy for English games: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The site does not currently implement the special Gambit Club repeated-two-move draw clause as a separate rule.
-
 ## Source note
 
 Original source: F. Dickens and G. White, *Chess in Bedfordshire*, Whitehead and Miller, Leeds, 1933, communicated by Miss E. C. Price from the Gambit Club in London.
 
 This transcription follows Appendix A, "Kriegspiel Rules at The Gambit", in Gian Piero Favini's [The dark side of the board: advances in chess Kriegspiel](https://www.cs.unibo.it/cianca/wwwpages/chesssite/favini2.pdf).
+
+---
+
+## Kriegspiel.org online implementation note
+
+The draw clauses above preserve the historical Gambit Club text. Kriegspiel.org currently uses a shared online endgame policy for English games: checkmate, stalemate, insufficient material, and a technical long-game cap for reversible play. The site does not currently implement the special Gambit Club repeated-two-move draw clause as a separate rule.
