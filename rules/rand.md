@@ -3,14 +3,14 @@ title: "RAND"
 slug: "rand"
 summary: "J. D. Williams's 1950 RAND reference: pawn-try squares, typed captures, promotion announcements, and rebuff counts."
 publishedAt: "2026-04-26"
-updatedAt: "2026-04-26"
+updatedAt: "2026-05-22"
 author: "Kriegspiel Team"
 tags: ["rules", "rand", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.1"
-revision: "rules-rand-r2"
-lastReviewedAt: "2026-04-26"
+version: "1.0.2"
+revision: "rules-rand-r3"
+lastReviewedAt: "2026-05-22"
 ---
 
 Standard chess rules apply, with the following additions and elucidations.
@@ -78,5 +78,11 @@ Standard chess rules apply, with the following additions and elucidations.
 19. It is considered ethical for a player to capitalize on blunders and all unsolicited information received from the referee and kibitzers. A player may solicit "information" from his opponent or otherwise heckle.
 
 20. For ladder games, the stalemate rule is currently modified: the stalemated player loses.
+
+---
+
+## Kriegspiel.org online implementation note
+
+The RAND rules allow a player to demand the count of the opponent's previous rebuffs or "no" answers. On Kriegspiel.org, RAND rebuffs are public in the referee log, so the count is visible from the log rather than exposed as a separate player action.
 
 *Original source: J. D. Williams, "Kriegsspiel rules at RAND", 1950. Via Paolo Ciancarini's [La Scacchiera Invisibile](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf).*
