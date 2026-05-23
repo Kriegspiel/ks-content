@@ -2,8 +2,8 @@
 title: "The Berkeley Kriegspiel problem database"
 slug: "berkeley-problem-database"
 summary: "A draft guide to Jason Wolfe and Stuart Russell's Berkeley Kriegspiel problem database, filtered PGN records, and why the set matters for benchmarks and solver work."
-publishedAt: "2026-05-23"
-updatedAt: "2026-05-23"
+publishedAt: "2026-09-23"
+updatedAt: "2026-09-23"
 author: "Kriegspiel Team"
 tags: ["berkeley", "problems", "benchmarks"]
 draft: true
