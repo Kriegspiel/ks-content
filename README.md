@@ -18,3 +18,7 @@ under `rules/`, and singleton site pages under `site/`.
 - Books and manuscripts available: publish an annotated guide to Kriegspiel
   books, pamphlets, manuscripts, problem collections, and archival scans, with
   author, date, source, rights notes, and local-copy availability.
+- Berkeley problem database: explain Jason Wolfe and Stuart Russell's Berkeley
+  Kriegspiel problem set, how filtered PGN encodes player-perspective histories,
+  what the mate and near-miss instances test, and how the database could guide
+  platform benchmarks or future solver work.
