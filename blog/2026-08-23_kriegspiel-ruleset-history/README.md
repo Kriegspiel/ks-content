@@ -143,16 +143,16 @@ uncertainty intact.
 
 ## Comparison table
 
-| Ruleset | Illegal attempts | Pawn-try / Any? | Capture announcements | Stalemate | Other rules |
-| --- | --- | --- | --- | --- | --- |
-| English problem tradition | Public illegal announcement in the Gambit Club tradition | `Are there any?` is central | Depends on convention | Usually orthodox unless specified | Problem texts may depend on specific `Any?` and try conventions |
-| Berkeley | Public rejection; attempted move hidden | No `Any?` in base platform variant | Capture square only | Orthodox unless specified | Promotions are not announced |
-| Berkeley Any | Public rejection; attempted move hidden | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | Orthodox unless specified | Promotions are not announced |
-| Wild 16 | Private rejection; only the player hears it | Counted next-turn pawn tries | Square plus pawn/piece type | Orthodox unless specified | Promotions are not announced |
-| Cincinnati | Public `Illegal` or `Nonsense` | Binary next-turn pawn-capture availability | Square plus pawn/piece type | Orthodox unless specified | Promotions are not announced |
-| RAND | Public rebuffs | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses | Promotions are announced, but not the promoted piece |
-| English | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square only | Historical rules treat stalemate as a draw | Gambit Club historical rules |
-| CrazyKrieg | Public rejection; attempted move hidden | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Orthodox unless specified | Crazyhouse rules with public reserves and hidden drop squares; promotions are not announced |
+| Ruleset | Illegal attempts | Pawn-try / Any? | Capture announcements | Other rules |
+| --- | --- | --- | --- | --- |
+| English problem tradition | Public illegal announcement in the Gambit Club tradition | `Are there any?` is central | Depends on convention | Problem texts may depend on specific `Any?`, try, and stalemate conventions |
+| Berkeley | Public rejection; attempted move hidden | No `Any?` in base platform variant | Capture square only | -- |
+| Berkeley Any | Public rejection; attempted move hidden | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | -- |
+| Wild 16 | Private rejection; only the player hears it | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
+| Cincinnati | Public `Illegal` or `Nonsense` | Binary next-turn pawn-capture availability | Square plus pawn/piece type | -- |
+| RAND | Public rebuffs | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses; promotions announced, but not the promoted piece |
+| English | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square only | Gambit Club historical rules treat stalemate as a draw |
+| CrazyKrieg | Public rejection; attempted move hidden | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Crazyhouse rules with public reserves and hidden drop squares |
 
 This table is intentionally a draft. Each row should be checked against the
 platform rules pages and source traditions before publication.
