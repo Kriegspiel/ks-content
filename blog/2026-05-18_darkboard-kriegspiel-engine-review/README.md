@@ -1,18 +1,20 @@
 ---
 title: "Darkboard, kriegspiel, and the path to a new bot"
 slug: "darkboard-kriegspiel-engine-review"
-summary: "A detailed review of the public Darkboard papers, tournament record, source-code availability, rule-set target, and a proposed Python implementation plan."
+summary: "A detailed review of the public Darkboard papers, tournament record, source-code availability, and a proposed Python implementation plan."
 publishedAt: "2026-05-18"
-updatedAt: "2026-05-18"
+updatedAt: "2026-05-24"
 author: "Kriegspiel Team"
 tags: ["research", "bots", "implementation", "darkboard"]
 draft: false
 lifecycle: published
 ---
 
-Darkboard is the best-known historical computer player for chess Kriegspiel. It is also a useful warning: the important public material is rich enough to guide a serious reimplementation, but not rich enough to claim an exact reconstruction of the original program.
+Darkboard is the best-known historical computer player for chess Kriegspiel.
 
-This post reviews the public sources I found, separates the 2006 Darkboard line from the later 2009 Monte Carlo Tree Search line, explains which ruleset a new bot should target, and proposes a Python implementation path. A new research scaffold for that implementation now lives at [Kriegspiel/bot-darkboard-mcts](https://github.com/Kriegspiel/bot-darkboard-mcts).
+Disclaimer: the important public material is rich enough to guide a serious reimplementation, but not rich enough to claim an exact reconstruction of the original program.
+
+This post reviews the public sources I found, separates the 2006 Darkboard line from the later 2009 Monte Carlo Tree Search line, and proposes a Python implementation path. A new research scaffold for that implementation now lives at [Kriegspiel/bot-darkboard-mcts](https://github.com/Kriegspiel/bot-darkboard-mcts).
 
 The short version is this: the original Darkboard source code does not appear to be publicly available. The public papers and thesis do, however, describe enough of the design to build a new bot inspired by it. For our platform, the most practical first implementation target is not a literal metaposition/minimax clone of 2006 Darkboard, but the later MCTS "approach C" described by Paolo Ciancarini and Gian Piero Favini in 2009 and 2010.
 
@@ -36,7 +38,7 @@ The tournament trail is public as well. ICGA's program page for [Darkboard](http
 
 Darkboard's history is interesting because it is not the story of one chess engine getting gradually stronger in the ordinary way. It is closer to two connected research engines wearing the same name: first a metaposition player that tried to keep uncertainty symbolic, then a Monte Carlo player that learned to search over what the player would actually hear from the referee.
 
-The first public chapter is [Turin 2006](https://www.game-ai-forum.org/icga-tournaments/tournament.php?id=72). Kriegspiel was still a tiny Computer Olympiad event, but it was an unusually sharp test for game AI. Ordinary chess programs assume both players can see the board. In Kriegspiel, the most important facts are missing: where the opponent's pieces are, whether a capture is possible, and even whether a chosen move is legal. Darkboard's 6.0/8 gold medal mattered because it showed that a program could be competitive without pretending the hidden board was just an ordinary chess position with a few unknown pieces.
+The first public chapter is [Turin 2006](https://www.game-ai-forum.org/icga-tournaments/tournament.php?id=72). Kriegspiel was still a tiny Computer Olympiad event. It was an unusually sharp test for game AI. Ordinary chess programs assume both players can see the board. In Kriegspiel, the most important facts are missing: where the opponent's pieces are, whether a capture is possible, and even whether a chosen move is legal. Darkboard's 6.0/8 gold medal mattered because it showed that a program could be competitive without pretending the hidden board was just an ordinary chess position with a few unknown pieces.
 
 The 2007 papers turned that tournament result into a research claim. [Representing Kriegspiel States with Metapositions](https://www.ijcai.org/Proceedings/07/Papers/394.pdf) describes the compact idea: instead of enumerating every possible hidden board, represent a larger abstract object that contains all boards still compatible with the player's observations. The longer ICGA Journal article, [A Program to Play Kriegspiel](https://journals.sagepub.com/doi/abs/10.3233/ICG-2007-30102), frames Darkboard as a full playing system rather than just a representation trick. That distinction matters. The engine was not only storing uncertainty; it was trying to make moves that balanced material, position, and information.
 
@@ -274,23 +276,6 @@ Darkboard benefited from ICC game statistics. We do not need personal opponent m
 - capture/retaliation chain lengths
 
 This needs care. If we ever introduce per-opponent modeling, we should explicitly design privacy and retention rules first.
-
-### A public evaluation report
-
-Before listing the bot as a serious opponent, publish a report with:
-
-- commit tested
-- time budget
-- number of games
-- ruleset
-- opponents
-- win/loss/draw counts
-- illegal-attempt rate
-- average tries per completed move
-- timeout rate
-- representative failure modes
-
-The original Darkboard papers are unusually good at reporting empirical setup. We should follow that habit.
 
 ### Clear naming
 
