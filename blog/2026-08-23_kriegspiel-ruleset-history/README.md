@@ -145,14 +145,14 @@ uncertainty intact.
 
 | Ruleset | Illegal attempts | Pawn-try / Any? | Capture announcements | Other rules |
 | --- | --- | --- | --- | --- |
-| English problem tradition | Public illegal announcement in the Gambit Club tradition | `Are there any?` is central | Depends on convention | Problem texts may depend on specific `Any?`, try, and stalemate conventions |
-| Berkeley | Public rejection; attempted move hidden | No `Any?` in base platform variant | Capture square only | -- |
-| Berkeley Any | Public rejection; attempted move hidden | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | -- |
-| Wild 16 | Private rejection; only the player hears it | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
-| Cincinnati | Public `Illegal` or `Nonsense` | Binary next-turn pawn-capture availability | Square plus pawn/piece type | -- |
-| RAND | Public rebuffs | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses; promotions announced, but not the promoted piece |
+| English problem tradition | Public illegal announcement | `Are there any?` is central | Depends on convention | Problem texts may depend on specific `Any?`, try, and stalemate conventions |
+| Berkeley | Public illegal announcement | No `Any?` in base platform variant | Capture square only | -- |
+| Berkeley Any | Public illegal announcement | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | -- |
+| Wild 16 | Private illegal announcement | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
+| Cincinnati | Public illegal announcement | Binary next-turn pawn-capture availability | Square plus pawn/piece type | -- |
+| RAND | Public illegal announcement | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses; promotions announced, but not the promoted piece |
 | English | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square only | -- |
-| CrazyKrieg | Public rejection; attempted move hidden | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Crazyhouse rules with public reserves and hidden drop squares |
+| CrazyKrieg | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Crazyhouse rules with public reserves and hidden drop squares |
 
 This table is intentionally a draft. Each row should be checked against the
 platform rules pages and source traditions before publication.
