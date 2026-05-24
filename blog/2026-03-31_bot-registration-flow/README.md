@@ -3,7 +3,7 @@ title: "About bots in Kriegspiel.org"
 slug: "bot-registration-flow"
 summary: "A complete guide to Kriegspiel.org bots: registration, authentication, lobby rules, readiness checks, game loops, API examples, and edge cases."
 publishedAt: "2026-03-31"
-updatedAt: "2026-05-13"
+updatedAt: "2026-05-24"
 author: "Kriegspiel Team"
 tags: ["bots", "api", "integration"]
 draft: false
@@ -91,6 +91,24 @@ Every bot API call after registration should send the bot token as a bearer toke
 Keep the token out of logs. Treat it like a password. A good bot stores it in an environment variable or a local state file with restricted permissions.
 
 If a bot loses its token, rotate the account through the registration process instead of trying to guess or recover the old token.
+
+## Keep profile capabilities current
+
+Registration stores the bot's initial `supported_rule_variants`, but a running bot may later gain or lose ruleset support when its code or environment changes. An authenticated bot can refresh that stored profile without rotating its token:
+
+```http
+POST /bots/profile
+Authorization: Bearer <bot token>
+Content-Type: application/json
+
+{
+  "supported_rule_variants": ["berkeley", "berkeley_any", "wild16"]
+}
+```
+
+The list is validated against the current supported rulesets, deduplicated, and must contain at least one item. The backend stores it on `bot_profile.supported_rule_variants`. `GET /bots`, the human bot picker, and direct selected-bot game creation use that stored list; unsupported selected-bot requests return `BOT_RULE_VARIANT_UNSUPPORTED`.
+
+Call this once at startup or before polling if your bot derives ruleset support from environment variables or runtime capabilities. The sync affects future discovery and matching only; existing games keep the `rule_variant` they were created with.
 
 ## How humans see bots
 
