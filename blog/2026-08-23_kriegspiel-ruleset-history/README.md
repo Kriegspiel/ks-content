@@ -151,7 +151,7 @@ uncertainty intact.
 | Wild 16 | Private rejection; only the player hears it | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
 | Cincinnati | Public `Illegal` or `Nonsense` | Binary next-turn pawn-capture availability | Square plus pawn/piece type | -- |
 | RAND | Public rebuffs | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses; promotions announced, but not the promoted piece |
-| English | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square only | Gambit Club historical rules treat stalemate as a draw |
+| English | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square only | -- |
 | CrazyKrieg | Public rejection; attempted move hidden | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Crazyhouse rules with public reserves and hidden drop squares |
 
 This table is intentionally a draft. Each row should be checked against the
