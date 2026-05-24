@@ -2,8 +2,8 @@
 title: "Books and manuscripts for Kriegspiel"
 slug: "kriegspiel-books-manuscripts"
 summary: "A draft annotated guide to Kriegspiel books, pamphlets, manuscripts, problem collections, archival scans, and catalogue-only sources."
-publishedAt: "2026-08-23"
-updatedAt: "2026-08-23"
+publishedAt: "2026-09-23"
+updatedAt: "2026-09-23"
 author: "Kriegspiel Team"
 tags: ["books", "history", "research"]
 draft: true
