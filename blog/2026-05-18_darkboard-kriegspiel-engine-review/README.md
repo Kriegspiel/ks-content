@@ -6,8 +6,8 @@ publishedAt: "2026-05-18"
 updatedAt: "2026-05-24"
 author: "Kriegspiel Team"
 tags: ["research", "bots", "implementation", "darkboard"]
-draft: false
-lifecycle: published
+draft: true
+lifecycle: draft
 ---
 
 Darkboard is the best-known historical computer player for chess Kriegspiel.
