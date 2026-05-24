@@ -2,8 +2,8 @@
 title: "A history of Kriegspiel rulesets"
 slug: "kriegspiel-ruleset-history"
 summary: "A draft tour through major Kriegspiel rules traditions, from English problem rules to Berkeley, ICC Wild 16, Cincinnati, RAND, and the current platform variants."
-publishedAt: "2026-07-23"
-updatedAt: "2026-07-23"
+publishedAt: "2026-08-23"
+updatedAt: "2026-08-23"
 author: "Kriegspiel Team"
 tags: ["rules", "history", "variants"]
 draft: true

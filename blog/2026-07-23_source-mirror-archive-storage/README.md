@@ -2,8 +2,8 @@
 title: "Source mirrors, archives, and rights review"
 slug: "source-mirror-archive-storage"
 summary: "A draft plan for preserving Kriegspiel papers, books, manuscripts, and supporting links without publishing material before its rights status is clear."
-publishedAt: "2026-06-23"
-updatedAt: "2026-06-23"
+publishedAt: "2026-07-23"
+updatedAt: "2026-07-23"
 author: "Kriegspiel Team"
 tags: ["research", "archives", "rights"]
 draft: true
