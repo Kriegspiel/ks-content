@@ -19,6 +19,7 @@ draft: false
 - [RAND](/rules/rand)
 - [English](/rules/english)
 - [CrazyKrieg](/rules/crazykrieg)
+- [Dutch](/rules/dutch)
 - [Comparison](/rules/comparison/)
 
 # Communication
