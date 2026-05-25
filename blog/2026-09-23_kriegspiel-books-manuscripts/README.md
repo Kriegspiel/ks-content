@@ -116,6 +116,32 @@ Draft notes:
 - rights status: citation-only unless permission is obtained
 - site value: endgames, problem material, practical deduction
 
+## H. D. Swart: Any in Action!
+
+Henk Swart's *Any in Action!* is the missing source behind one of the largest
+known Kriegspiel problem collections. Ciancarini cites it as a 2003 work by
+H. D. Swart and describes Swart as having composed about 1,600 Kriegspiel
+problems. Only selected examples appear in *La Scacchiera Invisibile* and in
+the site's translated problem post.
+
+No public scan, ISBN, publisher record, or library catalogue entry has turned
+up yet, so this should be treated as an unpublished or privately circulated
+manuscript until a physical or authorial copy is located. The guide should
+track it explicitly because it may be the key to Swart's numbered problem
+sequence.
+
+Draft notes:
+
+- likely source type: private manuscript / problem collection
+- current access: cited only; no public catalogue record found
+- rights status: unknown; permission and provenance needed before mirroring
+- site value: Swart problem corpus, mate-in-two tradition, rule variants
+
+Known starting points:
+
+- [La Scacchiera Invisibile](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf)
+- [Bolognesi thesis](https://www.cs.unibo.it/cianca/wwwpages/chesssite/bolognesi.pdf)
+
 ## Paolo Ciancarini: La Scacchiera Invisibile
 
 Paolo Ciancarini's *La Scacchiera Invisibile* is a book manuscript in progress,
@@ -187,6 +213,7 @@ still needs investigation.
 | Shapley, *The Invisible Chessboard* | 1987 | Public archival scan | Needs review | RAND/UCLA bridge |
 | Li, *Kriegspiel: Chess Under Uncertainty* | 1994 | Catalogue / used copies | Citation-only | Practical play |
 | Li, *Chess Detective* | 1995 | Catalogue / used copies | Citation-only | Problems, endgames, strategy |
+| Swart, *Any in Action!* | 2003 | Cited only / not located | Unknown | Swart problem corpus |
 | Ciancarini, *La Scacchiera Invisibile* | 2004 | Public author-hosted PDF | Needs review | Bologna history and problems |
 | Favini, *The dark side of the board* | 2010 | Public repository record | Needs review | Darkboard and implementation |
 
@@ -194,6 +221,8 @@ still needs investigation.
 
 - Which catalogue source should be treated as canonical for each book?
 - Can we verify Cayley's exact date and publisher from a scan or library copy?
+- Can we locate a copy of Swart's *Any in Action!* through Ciancarini, Dutch
+  problem-chess contacts, or Swart's estate?
 - Should the site include availability notes such as "used copies sometimes
   appear" or avoid marketplace guidance?
 - Should unpublished manuscripts be listed with books, or in a separate
