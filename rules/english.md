@@ -3,14 +3,14 @@ title: "English kriegspiel rules"
 slug: "english"
 summary: "The Gambit Club English rules: three boards, umpire-controlled legality, capture-square announcements, directional checks, and the classic Any? question."
 publishedAt: "2026-04-28"
-updatedAt: "2026-05-22"
+updatedAt: "2026-05-25"
 author: "Kriegspiel Team"
 tags: ["rules", "english", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.3"
-revision: "rules-english-r4"
-lastReviewedAt: "2026-05-22"
+version: "1.0.4"
+revision: "rules-english-r5"
+lastReviewedAt: "2026-05-25"
 ---
 
 These are the English rules enforced at the Gambit Club in London, as communicated by Miss E. C. Price and published in F. Dickens and G. White, *Chess in Bedfordshire*, Whitehead and Miller, Leeds, 1933.
@@ -67,8 +67,12 @@ Original source: F. Dickens and G. White, *Chess in Bedfordshire*, Whitehead and
 
 This transcription follows Appendix A, "Kriegspiel Rules at The Gambit", in Gian Piero Favini's [The dark side of the board: advances in chess Kriegspiel](https://www.cs.unibo.it/cianca/wwwpages/chesssite/favini2.pdf).
 
+Later English/Eastern rules summaries make one capture-announcement detail explicit: an en-passant capture is announced as en passant, using the capturing pawn's landing square. The referee still does not generally announce the capturing man or the captured man. This convention is documented in Paolo Ciancarini's [La Scacchiera Invisibile](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf) and on [The Chess Variant Pages](https://www.chessvariants.org/incinf.dir/kriegspiel.html).
+
 ---
 
 ## Kriegspiel.org online implementation note
 
 The draw clauses above preserve the historical Gambit Club text. Kriegspiel.org currently uses a shared online endgame policy for English games: checkmate, stalemate, insufficient material, and a finite-game cap. If the half-move clock reaches 2,000 consecutive half-moves without a pawn move or capture, the game is declared drawn. The site does not currently implement the special Gambit Club repeated-two-move draw clause as a separate rule.
+
+Kriegspiel.org also follows the later English/Eastern en-passant announcement convention described above: ordinary English captures announce only the capture square, while en-passant captures are announced explicitly as en passant on the capturing pawn's destination square.
