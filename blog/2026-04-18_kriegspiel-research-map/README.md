@@ -3,7 +3,7 @@ title: "A research map of Kriegspiel"
 slug: "kriegspiel-research-map"
 summary: "A compact guide to public Kriegspiel research, key papers, and the academic history around the game."
 publishedAt: "2026-04-18"
-updatedAt: "2026-05-21"
+updatedAt: "2026-05-25"
 author: "Kriegspiel Team"
 tags: ["research", "history", "academia"]
 draft: false
@@ -126,7 +126,7 @@ The Chessprogramming wiki also helps preserve the competitive side of that story
 | --- | --- | --- |
 | 1993 | Francesco Maran | [Razionalità Sostanziale e Procedurale nel Kriegspiel](https://www.cs.unibo.it/~cianca/wwwpages/chesssite/Maran.pdf) |
 | 2002 | Marco Collareda | [Progetto e Realizzazione di un programma cliente per Internet Chess Club](https://www.cs.unibo.it/~cianca/wwwpages/chesssite/collareda.pdf) |
-| 2003 | Alessandro Bolognesi | [Analisi e progettazione di un programma di gioco ad informazione imperfetta (Kriegspiel)](https://www.cs.unibo.it/~cianca/wwwpages/chesssite/bolognesi.pdf) |
+| 2003 | Andrea Bolognesi | [Analisi e progettazione di un programma di gioco ad informazione imperfetta](https://www.cs.unibo.it/~cianca/wwwpages/chesssite/bolognesi.pdf) |
 | 2003 | Gian Piero Favini | [A Java Interface for Kriegspiel on ICC](https://www.cs.unibo.it/~cianca/wwwpages/chesssite/favini.pdf) |
 | 2006 | Gian Piero Favini | [A program to play Kriegspiel](https://www.cs.unibo.it/~cianca/wwwpages/chesssite/favini2.pdf) |
 | 2010 | Gian Piero Favini | [The dark side of the board: advances in chess Kriegspiel](https://amsdottorato.unibo.it/id/eprint/2403/1/favini_gianpiero_tesi.pdf) |
