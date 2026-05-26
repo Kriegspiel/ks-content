@@ -128,6 +128,13 @@ after a positive answer. If that try is illegal, the player is released and may
 make any legal move. This captures an important problem-tradition rhythm:
 question, forced test, then deduction.
 
+Its capture announcements are mostly spare: ordinary captures announce the
+capture square without naming the capturing or captured man. En passant is the
+important exception in the current platform rules. Later English/Eastern
+summaries explicitly announce that the capture was en passant, and
+Kriegspiel.org follows that convention by announcing the capturing pawn's
+landing square rather than the square of the pawn removed from the board.
+
 `crazykrieg` adds crazyhouse-like reserves to the hidden-information setting.
 Its information design is deliberately explicit in some places and hidden in
 others:
@@ -151,7 +158,7 @@ uncertainty intact.
 | Wild 16 | Private illegal announcement | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
 | Cincinnati | Public illegal announcement | Binary next-turn pawn-capture availability | Square plus pawn/piece type | -- |
 | RAND | Public illegal announcement | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses; promotions announced, but not the promoted piece |
-| English | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square only | -- |
+| English | Public illegal announcement | `Any?` plus one required pawn-capture try | Ordinary captures announce square only; en passant is announced explicitly on the landing square | -- |
 | CrazyKrieg | Public illegal announcement | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Crazyhouse rules with public reserves and hidden drop squares |
 
 This table is intentionally a draft. Each row should be checked against the
