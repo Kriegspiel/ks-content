@@ -24,4 +24,4 @@ npm run build:content-index
 1. Run all content checks above.
 2. Verify slug uniqueness.
 3. Link to related changelog/blog entry when relevant.
-4. Merge content PR; website regeneration check must pass.
+4. Merge the `ks-content` PR; website regeneration check must pass.

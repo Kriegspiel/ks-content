@@ -1,6 +1,6 @@
 # Content Source Contract (Slice 910)
 
-Kriegspiel/content is the source of truth for website collections consumed by ks-home.
+Kriegspiel/ks-content is the source of truth for website collections consumed by ks-home.
 
 ## Collections
 

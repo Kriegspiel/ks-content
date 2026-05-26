@@ -132,7 +132,7 @@ Before importing anything, the project needs to answer practical questions:
 - How much of the original hidden state is needed to validate a solution?
 - Should problem pages show only player-perspective information, or also a
   referee view after the solution?
-- Do we need a dedicated `content/problems/` collection, or should problems
+- Do we need a dedicated `ks-content/problems/` collection, or should problems
   remain inside blog posts until the interface is designed?
 
 The answer may be phased. Start with a blog explanation and a few manually

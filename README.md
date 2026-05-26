@@ -1,4 +1,4 @@
-# Kriegspiel Content
+# Kriegspiel Content (`ks-content`)
 
 This repository holds the editable public content consumed by the Kriegspiel
 site. Published and draft blog entries live under `blog/`, public rules pages
