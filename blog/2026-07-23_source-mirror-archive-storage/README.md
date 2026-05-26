@@ -71,7 +71,7 @@ entry should capture:
 - review notes
 - last verified date
 
-That registry could live in `content` as structured metadata and feed future
+That registry could live in `ks-content` as structured metadata and feed future
 public source pages. It could also remain private until the site has a clear
 display design.
 
@@ -133,13 +133,13 @@ more useful than an arbitrary copied PDF path when they exist.
 
 ## Open questions
 
-- Should the registry live in `content` as a public draft, or should rights
+- Should the registry live in `ks-content` as a public draft, or should rights
   review begin in a private operator note?
 - Do we want local copies for preservation only, or visible download pages?
 - Which jurisdiction should the public-domain review use as the minimum bar?
 - How should we record author-granted permission so future maintainers can
   audit it?
-- Should mirrored files live in `content`, `ks-home`, object storage, or a
+- Should mirrored files live in `ks-content`, `ks-home`, object storage, or a
   separate archive repository?
 
 ## A cautious first milestone
