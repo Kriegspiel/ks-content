@@ -1,7 +1,7 @@
 ---
 title: "A history of Kriegspiel rulesets"
 slug: "kriegspiel-ruleset-history"
-summary: "A draft tour through major Kriegspiel rules traditions, from English problem rules to Berkeley, ICC Wild 16, Cincinnati, RAND, and the current platform variants."
+summary: "A draft tour through major Kriegspiel rules traditions, from English and Dutch problem rules to Berkeley, ICC Wild 16, Cincinnati, RAND, and the current platform variants."
 publishedAt: "2026-08-23"
 updatedAt: "2026-08-23"
 author: "Kriegspiel Team"
@@ -18,8 +18,9 @@ type, both, or neither? What happens at stalemate? Those details change the
 game.
 
 This draft maps the rules traditions that matter most for the platform and the
-research literature: English problem rules, Berkeley, ICC Wild 16, Cincinnati,
-RAND, and the platform's newer `berkeley_any` and `crazykrieg` variants.
+research literature: English problem rules, Dutch problem rules, Berkeley, ICC
+Wild 16, Cincinnati, RAND, and the platform's newer `berkeley_any` and
+`crazykrieg` variants.
 
 ## The core problem
 
@@ -48,6 +49,32 @@ the answer revealed the structure of the position.
 This tradition gives Kriegspiel a puzzle language. The core question is not
 only "what move wins?" but "what sequence of questions, tries, and deductions
 wins no matter what the hidden reply was?"
+
+## Dutch rules
+
+[Dutch rules](/rules/dutch) are currently documented here as a historical
+composition convention, not as a playable Kriegspiel.org ruleset. The source
+trail is still incomplete, but Paolo Ciancarini's
+[*La Scacchiera Invisibile*](https://www.cs.unibo.it/~paolo.ciancarini/wwwpages/chesssite/kriegspiel/scacchierainvisibile.pdf)
+preserves one important detail through a Henk Swart mate-in-two problem.
+
+In the known example, after a capture the referee distinguishes whether the
+capturing man was a pawn or a piece. That is different from Wild 16,
+Cincinnati, and RAND style announcements, which identify whether the captured
+man was a pawn or a piece.
+
+The distinction matters because Swart's problem needs to tell `...dxe4` from
+`...Bxe4`. Both are captures on `e4`, but they require different mates. A
+capture-square announcement alone is not enough. Under the Dutch convention
+Ciancarini records, the referee can say whether the capture on `e4` was made by
+a pawn or by a piece.
+
+That is enough to document Dutch rules as part of the composition history, but
+not enough to implement a full ruleset. The open questions include illegal
+attempts, check wording, promotion, stalemate, and whether the capturing-man
+announcement belonged to a stable Dutch rulebook or mainly to problem
+composition practice. We are still looking for Swart's *Any in Action!* or
+another primary Dutch reference.
 
 ## Berkeley rules
 
@@ -153,6 +180,7 @@ uncertainty intact.
 | Ruleset | Illegal attempts | Pawn-try / Any? | Capture announcements | Other rules |
 | --- | --- | --- | --- | --- |
 | English problem tradition | Public | `Are there any?` is central | Depends on convention | Problem texts may depend on specific `Any?`, try, and stalemate conventions |
+| Dutch | Not fully sourced | Known Swart example uses `Any?`; full pawn-try convention is not sourced | Capture square plus whether the capturing man was a pawn or a piece | Historical composition note only; not playable online |
 | Berkeley | Public | No `Any?` in base platform variant | Capture square only | -- |
 | Berkeley Any | Public | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | -- |
 | Wild 16 | Private | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
