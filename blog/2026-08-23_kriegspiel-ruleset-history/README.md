@@ -180,13 +180,13 @@ uncertainty intact.
 | Ruleset | Illegal attempts | Pawn-try / Any? | Capture announcements | Other rules |
 | --- | --- | --- | --- | --- |
 | English problem tradition | Public | `Are there any?` is central | Depends on convention | Problem texts may depend on specific `Any?`, try, and stalemate conventions |
-| Dutch | No source | Announce if capture was done by pawn or piece after an `Any?` | Announce if capture was done by pawn or piece after an `Any?` and a square | -- |
 | Berkeley | Public | No `Any?` in base platform variant | Capture square only | -- |
 | Berkeley Any | Public | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | -- |
 | Wild 16 | Private | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
 | Cincinnati | Public | Binary next-turn pawn-capture availability | Square plus pawn/piece type | -- |
 | RAND | Public | Source-square pawn-try announcements | Square plus pawn/piece type | Stalemated player loses; promotions announced, but not the promoted piece |
 | English | Public | `Any?` plus one required pawn-capture try | Ordinary captures announce square only; en passant is announced explicitly on the landing square | -- |
+| Dutch | No source | Announce if capture was done by pawn or piece after an `Any?` | Announce if capture was done by pawn or piece after an `Any?` and a square | -- |
 | CrazyKrieg | Public | `Any?` plus one required pawn-capture try | Capture square plus exact reserve identity | Crazyhouse rules with public reserves and hidden drop squares |
 
 This table is intentionally a draft. Each row should be checked against the
