@@ -180,7 +180,7 @@ uncertainty intact.
 | Ruleset | Illegal attempts | Pawn-try / Any? | Capture announcements | Other rules |
 | --- | --- | --- | --- | --- |
 | English problem tradition | Public | `Are there any?` is central | Depends on convention | Problem texts may depend on specific `Any?`, try, and stalemate conventions |
-| Dutch | Not fully sourced | Known Swart example uses `Any?`; full pawn-try convention is not sourced | Capture square plus whether the capturing man was a pawn or a piece | Historical composition note only; not playable online |
+| Dutch | No source | Announce if capture was done by pawn or piece after an `Any?` | Announce if capture was done by pawn or piece after an `Any?` and a square | -- |
 | Berkeley | Public | No `Any?` in base platform variant | Capture square only | -- |
 | Berkeley Any | Public | `Any?` supported; positive answer requires a legal pawn capture | Capture square only | -- |
 | Wild 16 | Private | Counted next-turn pawn tries | Square plus pawn/piece type | -- |
