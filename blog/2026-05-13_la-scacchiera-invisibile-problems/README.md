@@ -3,7 +3,7 @@ title: "Problems from La Scacchiera Invisibile"
 slug: "la-scacchiera-invisibile-problems"
 summary: "An English working translation of the Kriegspiel problem collection in Paolo Ciancarini's La Scacchiera Invisibile."
 publishedAt: "2026-05-13"
-updatedAt: "2026-05-13"
+updatedAt: "2026-06-01"
 author: "Kriegspiel Team"
 tags: ["problems", "translation", "research"]
 draft: false
@@ -38,17 +38,17 @@ Stipulation: in ordinary chess, White mates in three; in Kriegspiel, White mates
 
 Solution: The orthodox key is `1.b8=N`. The main lines are `1...Kc7 2.f8=Q Kb6 3.Qc5#` and `1...Ka7 2.f8=Q Ka8 3.Nc6#`. In Kriegspiel this cannot be solved in three, because White cannot distinguish the two black replies, which require different third moves. The Kriegspiel solution is `1.b8=N Kc7/a7 2.f8=Q Kb6/a8 3.Qc8 Ka7 4.Nc6#`.
 
-### Diagram 7.6 - Henk Swart, Dutch-rules example
+### Diagram 7.6 - Henk Swart, [Dutch rules](/rules/dutch) example
 
 Diagram FEN: `3b1q1Q/3NP1R1/1n1N1r2/R2p4/3kPp2/1P1p3p/3PPK2/2r2BBb w - - 0 1`
 
 Stipulation: mate in two. After White's move, Black asks "Are there any?"
 
-Solution: The key is `1.Rg3`, threatening `2.Rxd3#`. The defenses are `...fxg3`, `...dxe2`, `...Rxf1`, `...Bf3`, `...Rc3`, `...f3`, `...dxe4`, and `...Bxe4`. The first three captures are unambiguous and reveal the mate. Against the silent defenses `...Bf3`, `...Rc3`, and `...f3`, White tries `2.Kf3#`, then `2.Ke1#`, then `2.e3#`; the first accepted move mates. The real difficulty is distinguishing `...dxe4` from `...Bxe4`, which require different mates in orthodox play. Swart explained that [Dutch rules](/rules/dutch) announce whether a capture is made by a pawn or by a piece, so the referee distinguishes "Black captures on e4 with a pawn" from "Black captures on e4 with a piece." Ciancarini concludes that the problem is therefore solvable only with Dutch rules, while the extension is acceptable for problem composition.
+Solution: The key is `1.Rg3`, threatening `2.Rxd3#`. The defenses are `...fxg3`, `...dxe2`, `...Rxf1`, `...Bf3`, `...Rc3`, `...f3`, `...dxe4`, and `...Bxe4`. The first three captures are unambiguous and reveal the mate. Against the silent defenses `...Bf3`, `...Rc3`, and `...f3`, White tries `2.Kf3#`, then `2.Ke1#`, then `2.e3#`; the first accepted move mates. The real difficulty is distinguishing `...dxe4` from `...Bxe4`, which require different mates in orthodox play. Swart explained that [Dutch rules](/rules/dutch) announce whether a capture is made by a pawn or by a piece, so the referee distinguishes "Black captures on e4 with a pawn" from "Black captures on e4 with a piece." Ciancarini concludes that the problem is therefore solvable only with [Dutch rules](/rules/dutch), while the extension is acceptable for problem composition.
 
 ## Anderson problems
 
-All Anderson problems in this section use English rules.
+All Anderson problems in this section use [English rules](/rules/english).
 
 ### 7.1.1 - Anderson 1
 
@@ -406,13 +406,13 @@ Solution: The refused attempts must concern the king, eight attempts; the queen 
 
 ## Henk Swart problems
 
-Ciancarini describes Henk Swart as perhaps the greatest living composer of Kriegspiel problems at the time of the manuscript, with about 1,600 composed problems. These problems are all mate-in-two. Most are intended to work under both English rules and ICC rules unless the note says otherwise.
+Ciancarini describes Henk Swart as perhaps the greatest living composer of Kriegspiel problems at the time of the manuscript, with about 1,600 composed problems. These problems are all mate-in-two. Most are intended to work under both [English rules](/rules/english) and ICC rules unless the note says otherwise.
 
 ### 7.2.1 - Swart 686
 
 Diagram FEN: `3B4/8/2p5/2k5/p3KP2/P7/3RQ3/8 w - - 0 1`
 
-Solution: `1.Kd3`. Then `2.Kc4#` against `...Kd6`, `sor 2.Kd4#` against `...Kb5`, `sor 2.Qe5#` against `...Kd5`. All defenses are silent. The same solution works under both English and American rules.
+Solution: `1.Kd3`. Then `2.Kc4#` against `...Kd6`, `sor 2.Kd4#` against `...Kb5`, `sor 2.Qe5#` against `...Kd5`. All defenses are silent. The same solution works under both [English rules](/rules/english) and American rules.
 
 ### 7.2.2 - Swart 1034
 
