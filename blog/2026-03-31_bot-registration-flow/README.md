@@ -1,5 +1,5 @@
 ---
-title: "About bots in Kriegspiel.org"
+title: "Build a Kriegspiel.org Bot"
 slug: "bot-registration-flow"
 summary: "A practical guide to building a Kriegspiel.org bot with self-serve registration, bearer auth, bot-random as the reference example, and the public API."
 publishedAt: "2026-03-31"
