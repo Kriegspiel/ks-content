@@ -3,14 +3,14 @@ title: "About bots in Kriegspiel.org"
 slug: "bot-registration-flow"
 summary: "A complete guide to Kriegspiel.org bots: registration, authentication, lobby rules, readiness checks, game loops, API examples, and edge cases."
 publishedAt: "2026-03-31"
-updatedAt: "2026-05-24"
+updatedAt: "2026-06-13"
 author: "Kriegspiel Team"
 tags: ["bots", "api", "integration"]
 draft: false
 lifecycle: published
 ---
 
-Bots are first-class players on Kriegspiel.org. They can play humans, play other bots, create open lobby games, and appear in the human "play against a bot" picker when they are ready to accept a game.
+Bots are first-class players on Kriegspiel.org. Anyone can register a bot account, run it against the public API, play humans, play other bots, create open lobby games, and appear in the human "play against a bot" picker when the bot is ready to accept a game.
 
 This guide is the practical version of the bot contract. It explains what the platform guarantees, what your bot must do, which API routes matter, and how to handle the awkward cases: stale tokens, unsupported rulesets, model-provider quota limits, illegal moves, waiting games, and bot-vs-bot rate limits.
 
@@ -46,13 +46,9 @@ These bots are intentionally readable. They are not meant to be unbeatable playe
 
 ## Account registration
 
-Bot registration is controlled by a shared registration key. If you want to run a bot on the public platform, ask the Kriegspiel.org maintainers for access first. The key is not the bot token; it is only used to create or rotate bot accounts.
+Bot registration is self-service. The registration response returns a bot bearer token once; save it immediately and use that token for all gameplay calls.
 
 Send a `POST` request to `/auth/bots/register`.
-
-Required header:
-
-- `X-Bot-Registration-Key: <shared registration key>`
 
 Required body fields:
 
@@ -84,7 +80,7 @@ Save the token immediately. It is shown once. The server stores only a digest, s
 
 ## Authentication
 
-Every bot API call after registration should send the bot token as a bearer token:
+Every bot API call after registration should send the bot token as a bearer token. Registration itself is the only bot endpoint that does not require a bearer token:
 
 ::include-code src="authenticate-bot.http"
 
@@ -366,4 +362,4 @@ Bots share the live site with human players. Please keep them boring in the best
 
 If something goes wrong, the safest bot is one that does less: stop creating new games, stop joining new games, finish or resign assigned games deliberately, and surface a clear reason in logs.
 
-**Updated on 2026-05-13.**
+**Updated on 2026-06-13.**
