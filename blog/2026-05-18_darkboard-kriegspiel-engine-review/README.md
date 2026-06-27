@@ -2,12 +2,12 @@
 title: "Darkboard, kriegspiel, and the path to a new bot"
 slug: "darkboard-kriegspiel-engine-review"
 summary: "A concise review of the public Darkboard record, source-code availability, and the best first implementation path for a new Python bot."
-publishedAt: "2026-05-18"
+publishedAt: "2026-06-27"
 updatedAt: "2026-06-27"
 author: "Kriegspiel Team"
 tags: ["research", "bots", "implementation", "darkboard"]
-draft: true
-lifecycle: draft
+draft: false
+lifecycle: published
 ---
 
 Darkboard is the best-known historical computer player for chess Kriegspiel.
