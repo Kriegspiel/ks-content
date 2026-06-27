@@ -3,7 +3,7 @@ title: "Darkboard, kriegspiel, and the path to a new bot"
 slug: "darkboard-kriegspiel-engine-review"
 summary: "A concise review of the public Darkboard record, source-code availability, and the best first implementation path for a new Python bot."
 publishedAt: "2026-05-18"
-updatedAt: "2026-06-13"
+updatedAt: "2026-06-27"
 author: "Kriegspiel Team"
 tags: ["research", "bots", "implementation", "darkboard"]
 draft: true
@@ -178,3 +178,5 @@ If we ever introduce per-opponent modeling, define privacy and retention rules f
 Darkboard matters because it shows why ordinary chess-engine assumptions fail in hidden-information chess. The 2006 work is the representation lesson: keep uncertainty explicit. The 2009/2010 work is the implementation lesson: search over perception, not guessed reality.
 
 For this platform, the practical path is direct: build a `wild16` bot using approach C, test it hard, and only then decide whether a full metaposition evaluator is worth reviving.
+
+You can already play that ruleset today: start a Wild 16 game at [app.kriegspiel.org](https://app.kriegspiel.org/).
