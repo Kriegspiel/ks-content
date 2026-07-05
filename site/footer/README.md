@@ -10,7 +10,7 @@ draft: false
 ---
 # Game
 - [Play online](https://app.kriegspiel.org/)
-- [Playing here](/playing)
+- [Playing guide](/playing)
 - [Leaderboard](/leaderboard)
 
 # Rules
