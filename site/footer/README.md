@@ -9,8 +9,9 @@ tags: ["site", "footer", "navigation"]
 draft: false
 ---
 # Game
-- [Leaderboard](/leaderboard)
 - [Play online](https://app.kriegspiel.org/)
+- [Playing guide](/playing)
+- [Leaderboard](/leaderboard)
 
 # Rules
 - [Berkeley](/rules/berkeley)
