@@ -1,11 +1,11 @@
 ---
 title: "Kriegspiel Levels"
 slug: "levels"
-summary: "A practical guide to Beginner, Casual, Club, Strong, Expert, Master, and Elite rating levels on Kriegspiel.org."
+summary: "A practical guide to rating levels and bot access levels on Kriegspiel.org."
 publishedAt: "2026-07-05"
 updatedAt: "2026-07-05"
 author: "Kriegspiel Team"
-tags: ["site", "ratings", "levels"]
+tags: ["site", "ratings", "bots", "levels"]
 draft: false
 ---
 
@@ -22,6 +22,22 @@ Kriegspiel also asks for skills that normal chess ratings do not fully measure: 
 | Expert | 2000-2199 | You reliably turn vague clues into concrete plans. You understand when to ask, when to test, when to hide information, and when to simplify. Opponents at this level punish speculative attacks and careless king moves. |
 | Master | 2200-2399 | You combine strong chess technique with strong hidden-information discipline. You can defend without seeing everything, create threats that are hard to diagnose, and convert small information advantages. Errors are usually subtle: timing, inference, or choosing the wrong uncertainty to resolve. |
 | Elite | 2400+ | You are playing near the top of the pool. You expect precise chess, careful information management, and very few free chances. Elite games often turn on small referee details, clock decisions, and long-term pressure rather than obvious tactics. |
+
+## Bot Access Levels
+
+Bot access levels are separate from rating levels. They describe which bots are available and how long a game against an LLM-backed bot can run. Human games and simple bot games are not limited by this table.
+
+| Level | LLM bots | Maximum LLM bot game length | Best fit |
+|---|---|---:|---|
+| Guest | Not available | - | Human games, open lobby games, and simple bots. |
+| Level 1 | Available | 128 ply | Short LLM practice games and quick experiments. |
+| Level 2 | Available | 256 ply | Standard LLM practice games with enough room for a full opening and middlegame. |
+| Level 3 | Available | 1024 ply | Long games, stubborn endgames, and deeper model-bot experiments. |
+| Level 4 | Available | No limit | Unlimited LLM bot games. |
+
+One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
+
+If a capped game reaches the level limit and the LLM bot is next to move, the bot resigns instead of spending more model tokens. Simple bots remain available to guests, and human-vs-human games remain available without an LLM bot cap.
 
 ## What The Levels Are For
 
