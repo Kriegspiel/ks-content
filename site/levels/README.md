@@ -1,5 +1,5 @@
 ---
-title: "Kriegspiel Levels"
+title: "Kriegspiel levels"
 slug: "levels"
 summary: "A practical tier guide for Guest, Casual, Club, Strong, Expert, Master, and Elite access on Kriegspiel.org."
 publishedAt: "2026-07-05"
