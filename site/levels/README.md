@@ -15,7 +15,7 @@ The table below is organized like a product tier page: features run down the lef
 
 ## Feature availability
 
-| Feature | Tier T0 Guest | Tier T1 Casual | Tier T2 Club | Tier T3 Strong | Tier T4 Expert | Tier T5 Master | Tier T6 Elite |
+| Feature | Tier T0 Guest (Free) | Tier T1 Casual (Free) | Tier T2 Club ($10/mo / $100/yr) | Tier T3 Strong ($20/mo / $200/yr) | Tier T4 Expert ($50/mo / $500/yr) | Tier T5 Master (Not available yet) | Tier T6 Elite (Not available yet) |
 |---|---|---|---|---|---|---|---|
 | Play human games | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Play simple bots | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
