@@ -1,16 +1,16 @@
 ---
-title: "English kriegspiel rules"
+title: "English kriegspiel rules / Gambit club rules"
 slug: "english"
 summary: "The Gambit Club English rules: three boards, umpire-controlled legality, capture-square announcements, directional checks, and the classic Any? question."
 publishedAt: "2026-04-28"
-updatedAt: "2026-05-25"
+updatedAt: "2026-07-05"
 author: "Kriegspiel Team"
 tags: ["rules", "english", "historical"]
 draft: false
 lifecycle: published
-version: "1.0.4"
-revision: "rules-english-r5"
-lastReviewedAt: "2026-05-25"
+version: "1.0.5"
+revision: "rules-english-r6"
+lastReviewedAt: "2026-07-05"
 ---
 
 These are the English rules enforced at the Gambit Club in London, as communicated by Miss E. C. Price and published in F. Dickens and G. White, *Chess in Bedfordshire*, Whitehead and Miller, Leeds, 1933.
