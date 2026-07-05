@@ -1,5 +1,5 @@
 ---
-title: "Playing Guide"
+title: "Playing guide"
 slug: "playing"
 summary: "A short guide to playing on the platform: hidden boards, players, clock, reviews, ratings, and links."
 publishedAt: "2026-07-05"
@@ -9,7 +9,7 @@ tags: ["site", "game", "platform"]
 draft: false
 ---
 
-## Hidden Board
+## Hidden board
 
 Kriegspiel.org is an online referee for hidden-information chess. Choose a ruleset, create or join a game, and the server keeps the true board. Your browser receives only your side's legal view plus the public referee announcements for that ruleset. If you are new, start with the [rules index](/rules) or the [rules comparison](/rules/comparison/) before choosing a variant.
 

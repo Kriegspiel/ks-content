@@ -5,6 +5,7 @@ import { entryStem, listMarkdown, parseFrontmatter } from "./lib.mjs";
 
 const ALLOWED_LIFECYCLES = new Set(["draft", "review", "published", "archived"]);
 const REQUIRED_PATHS = ["/blog/", "/changelog/", "/rules/", "/docs/", "/scripts/", "/.github/"];
+const SINGLE_CAPITAL_SITE_TITLE_STEMS = new Set(["playing"]);
 const codeownersPath = path.join(process.cwd(), ".github", "CODEOWNERS");
 const issues = [];
 
@@ -39,6 +40,13 @@ for (const doc of docs) {
     }
     if (slug && slug !== stem) {
       issues.push(`${doc.dir}/${doc.file}: site folder must match slug (${slug})`);
+    }
+    if (SINGLE_CAPITAL_SITE_TITLE_STEMS.has(stem)) {
+      for (const title of siteTitleTexts(metadata, doc.raw)) {
+        if (!hasExactlyOneCapital(title)) {
+          issues.push(`${doc.dir}/${doc.file}: title must contain exactly one capital letter: ${title}`);
+        }
+      }
     }
   }
 
@@ -83,3 +91,18 @@ if (!fs.existsSync(codeownersPath)) {
 
 assert.equal(issues.length, 0, issues.join("\n"));
 console.log(`content-policy-check: PASS (${docs.length} content docs)`);
+
+function siteTitleTexts(metadata, raw) {
+  const titles = [];
+  if (metadata.title) titles.push(String(metadata.title));
+  for (const line of raw.split(/\r?\n/)) {
+    const match = /^(#{1,6})\s+(.+?)\s*$/.exec(line);
+    if (match) titles.push(match[2]);
+  }
+  return titles;
+}
+
+function hasExactlyOneCapital(value) {
+  const capitals = value.match(/[A-Z]/g) || [];
+  return capitals.length === 1;
+}
