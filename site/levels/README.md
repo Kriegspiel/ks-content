@@ -9,13 +9,13 @@ tags: ["site", "ratings", "bots", "levels"]
 draft: false
 ---
 
-Kriegspiel levels are a friendly map for play on the site. Tier 0 is Guest access. Tiers 1 through 6 are player levels: Casual, Club, Strong, Expert, Master, and Elite.
+Kriegspiel levels are a friendly map for play on the site. Tier T0 is Guest access. Tiers T1 through T6 are player levels: Casual, Club, Strong, Expert, Master, and Elite.
 
 The table below is organized like a product tier page: features run down the left side, tiers run across the top, and each cell says whether that feature is available at that tier.
 
 ## Feature availability
 
-| Feature | Tier 0 Guest | Tier 1 Casual | Tier 2 Club | Tier 3 Strong | Tier 4 Expert | Tier 5 Master | Tier 6 Elite |
+| Feature | Tier T0 Guest | Tier T1 Casual | Tier T2 Club | Tier T3 Strong | Tier T4 Expert | Tier T5 Master | Tier T6 Elite |
 |---|---|---|---|---|---|---|---|
 | Play human games | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 | Play simple bots | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
@@ -43,13 +43,13 @@ Ratings are estimates, not identities. A level describes the kind of game a play
 
 | Tier | Rough rating | What to expect |
 |---|---:|---|
-| Tier 0 Guest | Unrated | You can try Kriegspiel immediately, play human games or simple bots, and review completed games without setting up a full account. |
-| Tier 1 Casual | 0-1199 | You understand the basic flow and can make sensible legal plans. Games still swing because of loose king safety, missed captures, or guesses made too quickly. |
-| Tier 2 Club | 1200-1599 | You can play a complete game with a plan, not just reactions. You start using absence of information as information. |
-| Tier 3 Strong | 1600-1999 | You are a dangerous opponent. You manage risk, preserve useful information, and often know what the opponent is trying to prove. |
-| Tier 4 Expert | 2000-2199 | You reliably turn vague clues into concrete plans. You understand when to ask, when to test, when to hide information, and when to simplify. |
-| Tier 5 Master | 2200-2399 | You combine strong chess technique with strong hidden-information discipline. You can defend without seeing everything and convert small information advantages. |
-| Tier 6 Elite | 2400+ | You are playing near the top of the pool. Elite games often turn on small referee details, clock decisions, and long-term pressure rather than obvious tactics. |
+| Tier T0 Guest | Unrated | You can try Kriegspiel immediately, play human games or simple bots, and review completed games without setting up a full account. |
+| Tier T1 Casual | 0-1199 | You understand the basic flow and can make sensible legal plans. Games still swing because of loose king safety, missed captures, or guesses made too quickly. |
+| Tier T2 Club | 1200-1599 | You can play a complete game with a plan, not just reactions. You start using absence of information as information. |
+| Tier T3 Strong | 1600-1999 | You are a dangerous opponent. You manage risk, preserve useful information, and often know what the opponent is trying to prove. |
+| Tier T4 Expert | 2000-2199 | You reliably turn vague clues into concrete plans. You understand when to ask, when to test, when to hide information, and when to simplify. |
+| Tier T5 Master | 2200-2399 | You combine strong chess technique with strong hidden-information discipline. You can defend without seeing everything and convert small information advantages. |
+| Tier T6 Elite | 2400+ | You are playing near the top of the pool. Elite games often turn on small referee details, clock decisions, and long-term pressure rather than obvious tactics. |
 
 ## What the levels are for
 
