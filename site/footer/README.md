@@ -3,14 +3,15 @@ title: "Footer"
 slug: "footer"
 summary: "Canonical footer content and link grouping for kriegspiel.org."
 publishedAt: "2026-03-29"
-updatedAt: "2026-05-26"
+updatedAt: "2026-07-05"
 author: "Kriegspiel Team"
 tags: ["site", "footer", "navigation"]
 draft: false
 ---
 # Game
-- [Leaderboard](/leaderboard)
 - [Play online](https://app.kriegspiel.org/)
+- [Playing here](/playing)
+- [Leaderboard](/leaderboard)
 
 # Rules
 - [Berkeley](/rules/berkeley)
