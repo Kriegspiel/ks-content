@@ -13,7 +13,7 @@ Kriegspiel levels are a friendly map for play on the site. Tier 0 is Guest acces
 
 The table below is organized like a product tier page: features run down the left side, tiers run across the top, and each cell says whether that feature is available at that tier.
 
-## Feature Availability
+## Feature availability
 
 | Feature | Tier 0 Guest | Tier 1 Casual | Tier 2 Club | Tier 3 Strong | Tier 4 Expert | Tier 5 Master | Tier 6 Elite |
 |---|---|---|---|---|---|---|---|
@@ -37,7 +37,7 @@ One ply means one player turn. A normal full chess move is two plies: White move
 
 If a capped game reaches the tier limit and the language-model bot is next to move, the bot resigns instead of spending more model tokens. Simple bots remain available to guests, and human-vs-human games remain available without a language-model bot cap.
 
-## Tier Rating Bands
+## Tier rating bands
 
 Ratings are estimates, not identities. A level describes the kind of game a player can usually handle today, and it will move as more games finish.
 
@@ -51,13 +51,13 @@ Ratings are estimates, not identities. A level describes the kind of game a play
 | Tier 5 Master | 2200-2399 | You combine strong chess technique with strong hidden-information discipline. You can defend without seeing everything and convert small information advantages. |
 | Tier 6 Elite | 2400+ | You are playing near the top of the pool. Elite games often turn on small referee details, clock decisions, and long-term pressure rather than obvious tactics. |
 
-## What The Levels Are For
+## What the levels are for
 
 Levels help players choose expectations before a game. A Casual player should not feel bad losing to a Club player; a Strong player should expect a Casual player to miss patterns that look obvious in hindsight.
 
 They also make progress visible. Moving from Casual to Club is often about discipline, not brilliance. Moving from Club to Strong is often about turning information into plans. Moving from Strong upward is about being accurate while never seeing the full board.
 
-## What Ratings Do Not Say
+## What ratings do not say
 
 A rating does not say whether someone is creative, cautious, fast, experimental, or fun to play. It also does not guarantee the result of one game. Kriegspiel has real variance because players are reasoning through incomplete information.
 
