@@ -25,19 +25,21 @@ Kriegspiel also asks for skills that normal chess ratings do not fully measure: 
 
 ## Bot Access Levels
 
-Bot access levels are separate from rating levels. They describe which bots are available and how long a game against an LLM-backed bot can run. Human games and simple bot games are not limited by this table.
+Bot access levels are separate from rating levels. They describe which bots are available and how long a game against a language-model bot can run. Human games and simple bot games are not limited by this table.
 
-| Level | LLM bots | Maximum LLM bot game length | Best fit |
+| Level | Language-model bots | Maximum language-model bot game length | Best fit |
 |---|---|---:|---|
 | Guest | Not available | - | Human games, open lobby games, and simple bots. |
-| Level 1 | Available | 128 ply | Short LLM practice games and quick experiments. |
-| Level 2 | Available | 256 ply | Standard LLM practice games with enough room for a full opening and middlegame. |
+| Level 1 | Available | 128 ply | Short model-bot practice games and quick experiments. |
+| Level 2 | Available | 256 ply | Standard model-bot practice games with enough room for a full opening and middlegame. |
 | Level 3 | Available | 1024 ply | Long games, stubborn endgames, and deeper model-bot experiments. |
-| Level 4 | Available | No limit | Unlimited LLM bot games. |
+| Level 4 | Available | No limit | Unlimited model-bot games. |
 
 One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
 
-If a capped game reaches the level limit and the LLM bot is next to move, the bot resigns instead of spending more model tokens. Simple bots remain available to guests, and human-vs-human games remain available without an LLM bot cap.
+If a capped game reaches the level limit and the language-model bot is next to move, the bot resigns instead of spending more model tokens. Simple bots remain available to guests, and human-vs-human games remain available without a model-bot cap.
+
+The bot names are written out in the app rather than using short report codes. The current listed bots include Haiku Bot, GPT Nano Bot, Gemini 2.5 Flash Lite Bot, DeepSeek V4 Flash Bot, GPT OSS 120B Bot, Qwen 3.6 Flash Bot, Gemini 3.1 Flash Lite Bot, Llama 3.1 8B Bot, Random Bot, Random Any Bot, and Simple Heuristics Bot.
 
 ## What The Levels Are For
 
