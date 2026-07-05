@@ -1,7 +1,7 @@
 ---
 title: "Kriegspiel Levels"
 slug: "levels"
-summary: "A practical guide to rating levels and bot access levels on Kriegspiel.org."
+summary: "A practical tier guide for Guest, Casual, Club, Strong, Expert, Master, and Elite access on Kriegspiel.org."
 publishedAt: "2026-07-05"
 updatedAt: "2026-07-05"
 author: "Kriegspiel Team"
@@ -9,41 +9,51 @@ tags: ["site", "ratings", "bots", "levels"]
 draft: false
 ---
 
-Ratings are estimates, not identities. A level describes the kind of game a player can usually handle today, and it will move as more games finish.
+Kriegspiel levels are a friendly map for play on the site. Tier 0 is Guest access. Tiers 1 through 6 are player levels: Casual, Club, Strong, Expert, Master, and Elite.
 
-Kriegspiel also asks for skills that normal chess ratings do not fully measure: deduction, risk control, memory, patience after illegal tries, and comfort playing without a visible enemy army. Treat these levels as a friendly map, not a title system.
+The table below is organized like a product tier page: features run down the left side, tiers run across the top, and each cell says whether that feature is available at that tier.
 
-| Level | Rough rating | What to expect |
-|---|---:|---|
-| Beginner | 0-799 | You are learning how the hidden board changes the game. Expect missed threats, illegal tries, forgotten referee clues, and sudden tactical surprises. The main goal is to finish games, notice announcements, and get comfortable with uncertainty. |
-| Casual | 800-1199 | You understand the basic flow and can make sensible legal plans. Games still swing because of loose king safety, missed captures, or guesses made too quickly. The next step is building habits: track pawn tries, write down clues mentally, and avoid one-move hopes. |
-| Club | 1200-1599 | You can play a complete game with a plan, not just reactions. You start using absence of information as information. Mistakes still come from overconfidence: assuming a square is safe, ignoring a quiet check idea, or losing the thread after several referee calls. |
-| Strong | 1600-1999 | You are a dangerous opponent. You manage risk, preserve useful information, and often know what the opponent is trying to prove. Games are decided by calculation under uncertainty, time pressure, and whether you can keep multiple possible boards alive in your head. |
-| Expert | 2000-2199 | You reliably turn vague clues into concrete plans. You understand when to ask, when to test, when to hide information, and when to simplify. Opponents at this level punish speculative attacks and careless king moves. |
-| Master | 2200-2399 | You combine strong chess technique with strong hidden-information discipline. You can defend without seeing everything, create threats that are hard to diagnose, and convert small information advantages. Errors are usually subtle: timing, inference, or choosing the wrong uncertainty to resolve. |
-| Elite | 2400+ | You are playing near the top of the pool. You expect precise chess, careful information management, and very few free chances. Elite games often turn on small referee details, clock decisions, and long-term pressure rather than obvious tactics. |
+## Feature Availability
 
-## Bot Access Levels
-
-Bot access levels are separate from rating levels. They describe which bots are available and how long a game against a language-model bot can run. Human games and simple bot games are not limited by this table.
-
-| Level | Language-model bots | Maximum language-model bot game length | Best fit |
-|---|---|---:|---|
-| Guest | Not available | - | Human games, open lobby games, and simple bots. |
-| Level 1 | Available | 128 ply | Short model-bot practice games and quick experiments. |
-| Level 2 | Available | 256 ply | Standard model-bot practice games with enough room for a full opening and middlegame. |
-| Level 3 | Available | 1024 ply | Long games, stubborn endgames, and deeper model-bot experiments. |
-| Level 4 | Available | No limit | Unlimited model-bot games. |
+| Feature | Tier 0 Guest | Tier 1 Casual | Tier 2 Club | Tier 3 Strong | Tier 4 Expert | Tier 5 Master | Tier 6 Elite |
+|---|---|---|---|---|---|---|---|
+| Play human games | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Play simple bots | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Play language-model bots | No | Yes | Yes | Yes | Yes | Yes | Yes |
+| 128-ply language-model bot games | No | Yes | Yes | Yes | Yes | Yes | Yes |
+| 256-ply language-model bot games | No | No | Yes | Yes | Yes | Yes | Yes |
+| 1024-ply language-model bot games | No | No | No | Yes | Yes | Yes | Yes |
+| Unlimited language-model bot games | No | No | No | No | Yes | Yes | Yes |
+| Persistent player name | No | Yes | Yes | Yes | Yes | Yes | Yes |
+| Public player profile | No | Yes | Yes | Yes | Yes | Yes | Yes |
+| Leaderboard eligibility | No | Yes | Yes | Yes | Yes | Yes | Yes |
+| Rating history | No | Yes | Yes | Yes | Yes | Yes | Yes |
+| Completed-game review | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Club-level recognition | No | No | Yes | Yes | Yes | Yes | Yes |
+| Advanced-level recognition | No | No | No | Yes | Yes | Yes | Yes |
+| Top-tier recognition | No | No | No | No | No | Yes | Yes |
 
 One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
 
-If a capped game reaches the level limit and the language-model bot is next to move, the bot resigns instead of spending more model tokens. Simple bots remain available to guests, and human-vs-human games remain available without a model-bot cap.
+If a capped game reaches the tier limit and the language-model bot is next to move, the bot resigns instead of spending more model tokens. Simple bots remain available to guests, and human-vs-human games remain available without a language-model bot cap.
 
-The bot names are written out in the app rather than using short report codes. The current listed bots include Haiku Bot, GPT Nano Bot, Gemini 2.5 Flash Lite Bot, DeepSeek V4 Flash Bot, GPT OSS 120B Bot, Qwen 3.6 Flash Bot, Gemini 3.1 Flash Lite Bot, Llama 3.1 8B Bot, Random Bot, Random Any Bot, and Simple Heuristics Bot.
+## Tier Rating Bands
+
+Ratings are estimates, not identities. A level describes the kind of game a player can usually handle today, and it will move as more games finish.
+
+| Tier | Rough rating | What to expect |
+|---|---:|---|
+| Tier 0 Guest | Unrated | You can try Kriegspiel immediately, play human games or simple bots, and review completed games without setting up a full account. |
+| Tier 1 Casual | 0-1199 | You understand the basic flow and can make sensible legal plans. Games still swing because of loose king safety, missed captures, or guesses made too quickly. |
+| Tier 2 Club | 1200-1599 | You can play a complete game with a plan, not just reactions. You start using absence of information as information. |
+| Tier 3 Strong | 1600-1999 | You are a dangerous opponent. You manage risk, preserve useful information, and often know what the opponent is trying to prove. |
+| Tier 4 Expert | 2000-2199 | You reliably turn vague clues into concrete plans. You understand when to ask, when to test, when to hide information, and when to simplify. |
+| Tier 5 Master | 2200-2399 | You combine strong chess technique with strong hidden-information discipline. You can defend without seeing everything and convert small information advantages. |
+| Tier 6 Elite | 2400+ | You are playing near the top of the pool. Elite games often turn on small referee details, clock decisions, and long-term pressure rather than obvious tactics. |
 
 ## What The Levels Are For
 
-Levels help players choose expectations before a game. A Beginner should not feel bad losing to a Club player; a Strong player should expect a Casual player to miss patterns that look obvious in hindsight.
+Levels help players choose expectations before a game. A Casual player should not feel bad losing to a Club player; a Strong player should expect a Casual player to miss patterns that look obvious in hindsight.
 
 They also make progress visible. Moving from Casual to Club is often about discipline, not brilliance. Moving from Club to Strong is often about turning information into plans. Moving from Strong upward is about being accurate while never seeing the full board.
 
