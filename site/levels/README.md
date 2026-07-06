@@ -1,7 +1,7 @@
 ---
-title: "Kriegspiel levels"
+title: "Levels and pricing"
 slug: "levels"
-summary: "A practical tier guide for Guest, Casual, Club, Strong, Expert, Master, and Elite access on Kriegspiel.org."
+summary: "A practical levels and pricing guide for Guest, Casual, Club, Strong, Expert, Master, and Elite access on Kriegspiel.org."
 publishedAt: "2026-07-05"
 updatedAt: "2026-07-06"
 author: "Kriegspiel Team"
@@ -9,7 +9,7 @@ tags: ["site", "bots", "levels"]
 draft: false
 ---
 
-Kriegspiel levels are a friendly map for play on the site. Tier T0 is Guest access. Tiers T1 through T6 are player levels: Casual, Club, Strong, Expert, Master, and Elite.
+Levels and pricing are a friendly map for play on the site. Tier T0 is Guest access. Tiers T1 through T6 are player levels: Casual, Club, Strong, Expert, Master, and Elite.
 
 The table below is organized like a product tier page: features run down the left side, tiers run across the top, and each cell says whether that feature is available at that tier or lists the bot bucket unlocked there.
 
