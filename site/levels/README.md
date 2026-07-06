@@ -17,21 +17,21 @@ The table below is organized like a product tier page: features run down the lef
 
 | Feature | Tier T0 Guest (Free) | Tier T1 Casual (Free) | Tier T2 Club ($10/mo / $100/yr) | Tier T3 Strong ($20/mo / $200/yr) | Tier T4 Expert ($50/mo / $500/yr) | Tier T5 Master (Not available yet) | Tier T6 Elite (Not available yet) |
 |---|---|---|---|---|---|---|---|
-| Play human games | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Play simple bots | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Play language-model bots | No | Yes | Yes | Yes | Yes | Yes | Yes |
-| 128-ply language-model bot games | No | Yes | Yes | Yes | Yes | Yes | Yes |
-| 256-ply language-model bot games | No | No | Yes | Yes | Yes | Yes | Yes |
-| 1024-ply language-model bot games | No | No | No | Yes | Yes | Yes | Yes |
-| Unlimited language-model bot games | No | No | No | No | Yes | Yes | Yes |
-| Persistent player name | No | Yes | Yes | Yes | Yes | Yes | Yes |
-| Public player profile | No | Yes | Yes | Yes | Yes | Yes | Yes |
-| Leaderboard eligibility | No | Yes | Yes | Yes | Yes | Yes | Yes |
-| Rating history | No | Yes | Yes | Yes | Yes | Yes | Yes |
-| Completed-game review | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
-| Club-level recognition | No | No | Yes | Yes | Yes | Yes | Yes |
-| Advanced-level recognition | No | No | No | Yes | Yes | Yes | Yes |
-| Top-tier recognition | No | No | No | No | No | Yes | Yes |
+| Play human games | Yes | Yes | Yes | Yes | Yes | — | — |
+| Play simple bots | Yes | Yes | Yes | Yes | Yes | — | — |
+| Play language-model bots | No | Yes | Yes | Yes | Yes | — | — |
+| 128-ply language-model bot games | No | Yes | Yes | Yes | Yes | — | — |
+| 256-ply language-model bot games | No | No | Yes | Yes | Yes | — | — |
+| 1024-ply language-model bot games | No | No | No | Yes | Yes | — | — |
+| Unlimited language-model bot games | No | No | No | No | Yes | — | — |
+| Persistent player name | No | Yes | Yes | Yes | Yes | — | — |
+| Public player profile | No | Yes | Yes | Yes | Yes | — | — |
+| Leaderboard eligibility | No | Yes | Yes | Yes | Yes | — | — |
+| Rating history | No | Yes | Yes | Yes | Yes | — | — |
+| Completed-game review | Yes | Yes | Yes | Yes | Yes | — | — |
+| Club-level recognition | No | No | Yes | Yes | Yes | — | — |
+| Advanced-level recognition | No | No | No | Yes | Yes | — | — |
+| Top-tier recognition | No | No | No | No | No | — | — |
 
 One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
 
