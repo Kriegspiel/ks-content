@@ -19,6 +19,7 @@ The table below is organized like a product tier page: features run down the lef
 |---|---|---|---|---|---|---|---|
 | Play human games | Yes | Yes | Yes | Yes | Yes | — | — |
 | Play simple bots | Yes | Yes | Yes | Yes | Yes | — | — |
+| Completed-game review | Yes | Yes | Yes | Yes | Yes | — | — |
 | Play language-model bots | No | Yes | Yes | Yes | Yes | — | — |
 | 128-ply language-model bot games | No | Yes | Yes | Yes | Yes | — | — |
 | 256-ply language-model bot games | No | No | Yes | Yes | Yes | — | — |
@@ -28,7 +29,6 @@ The table below is organized like a product tier page: features run down the lef
 | Public player profile | No | Yes | Yes | Yes | Yes | — | — |
 | Leaderboard eligibility | No | Yes | Yes | Yes | Yes | — | — |
 | Rating history | No | Yes | Yes | Yes | Yes | — | — |
-| Completed-game review | Yes | Yes | Yes | Yes | Yes | — | — |
 
 One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
 
