@@ -29,9 +29,6 @@ The table below is organized like a product tier page: features run down the lef
 | Leaderboard eligibility | No | Yes | Yes | Yes | Yes | — | — |
 | Rating history | No | Yes | Yes | Yes | Yes | — | — |
 | Completed-game review | Yes | Yes | Yes | Yes | Yes | — | — |
-| Club-level recognition | No | No | Yes | Yes | Yes | — | — |
-| Advanced-level recognition | No | No | No | Yes | Yes | — | — |
-| Top-tier recognition | No | No | No | No | No | — | — |
 
 One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
 
