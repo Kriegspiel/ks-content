@@ -20,7 +20,6 @@ The table below is organized like a product tier page: features run down the lef
 | Play human games | Yes | Yes | Yes | Yes | Yes | — | — |
 | Play simple bots | Yes | Yes | Yes | Yes | Yes | — | — |
 | Completed-game review | Yes | Yes | Yes | Yes | Yes | — | — |
-| Play language-model bots | No | Yes | Yes | Yes | Yes | — | — |
 | 128-ply language-model bot games | No | Yes | Yes | Yes | Yes | — | — |
 | 256-ply language-model bot games | No | No | Yes | Yes | Yes | — | — |
 | 1024-ply language-model bot games | No | No | No | Yes | Yes | — | — |
