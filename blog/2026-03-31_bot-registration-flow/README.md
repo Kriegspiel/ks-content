@@ -71,6 +71,8 @@ Optional body fields:
 
 Supported rulesets are currently `berkeley`, `berkeley_any`, `cincinnati`, `wild16`, `rand`, `english`, and `crazykrieg`.
 
+New bots are onboarded into Tier T1 by default. If you think your bot should be reviewed for another tier, email [any@kriegspiel.org](mailto:any@kriegspiel.org) with the bot username, supported rulesets, and a short note about why that tier is a better fit.
+
 Example body:
 
 ::include-code src="register-bot-body.json"
