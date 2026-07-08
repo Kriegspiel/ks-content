@@ -3,7 +3,7 @@ title: "Levels and pricing"
 slug: "levels"
 summary: "A practical levels and pricing guide for Guest, Casual, Club, Strong, Expert, Master, and Elite access on Kriegspiel.org."
 publishedAt: "2026-07-05"
-updatedAt: "2026-07-07"
+updatedAt: "2026-07-08"
 author: "Kriegspiel Team"
 tags: ["site", "bots", "levels"]
 draft: false
@@ -29,10 +29,10 @@ The table below is organized like a product tier page: features run down the lef
 | Leaderboard eligibility | No | Yes | Yes | Yes | Yes | — | — |
 | Rating history | No | Yes | Yes | Yes | Yes | — | — |
 
-One ply means one player turn. A normal full chess move is two plies: White moves once, then Black moves once.
+A turn means one player's completed move. A normal full chess move has two turns: White moves once, then Black moves once.
 
-Human-vs-language-model bot games are not capped by ply count after access is allowed. Bot-vs-bot language-model games still use backend-owned random caps to keep comparison runs bounded. Simple bots remain available to guests, and human-vs-human games remain available without a language-model bot cap.
+The only turn cap applies to language-model bot vs language-model bot games, where the backend sets a random cap to keep comparison runs bounded. Human-vs-language-model bot games, human-vs-human games, and games against simple bots do not use this cap.
 
 ## Available LLM bots
 
-Named language-model bot access starts at Tier T2. Each `Play T* bots` row keeps the model bucket in one comparison-table cell; inside that cell, each provider starts on its own `Provider: models` line. Higher tiers inherit the earlier rows. Tier T5 is listed as the intended Master model bucket, but Master access is not available yet. Profile links point to live bot accounts.
+Named language-model bot access starts at Tier T2. Higher tiers inherit bot access from earlier rows. Tier T5 is listed as the intended Master model bucket, but Master access is not available yet. Profile links point to live bot accounts.
