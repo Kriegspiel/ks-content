@@ -10,10 +10,6 @@ draft: true
 lifecycle: draft
 ---
 
-This is an in-progress report. The data tables will come later; this draft
-starts with the tournament design, the outcome rules, and the way LLM bots are
-prompted to play.
-
 We are adding a large set of LLM-powered bots to the Kriegspiel platform. That
 is exciting, but it creates a practical problem: many models either perform very
 similarly or perform badly enough that they are not useful opponents. Listing
@@ -28,7 +24,7 @@ used as long-running opponents on the platform.
 
 The first step is to run tournaments within a single LLM family. A Llama bot
 plays other Llama bots, a Nemotron bot plays other Nemotron bots, a Mistral bot
-plays other Mistral bots, and so on.
+plays other Mistral bots, a GLM bot plays other GLM bots, and so on.
 
 That gives each family its own bracket:
 
@@ -39,6 +35,7 @@ That gives each family its own bracket:
 | Mistral | Mistral-family model bots against each other. |
 | Gemma | Gemma-family model bots against each other. |
 | Gemini | Gemini-family model bots against each other. |
+| GLM | GLM-family model bots against each other. |
 
 This post starts with the Llama bracket. The same method can be reused for the
 other families as more model bots are enabled.
@@ -46,8 +43,8 @@ other families as more model bots are enabled.
 Family brackets keep the first comparison simple. Models in the same family
 often share architecture, provider behavior, prompt sensitivity, and failure
 modes. Before asking whether the best Llama is stronger than the best Mistral or
-Gemini, we first need to know which Llama, Mistral, or Gemini bot should
-represent its family at all.
+Gemini, or GLM, we first need to know which Llama, Mistral, Gemini, or GLM bot
+should represent its family at all.
 
 ## Tournament setup
 
