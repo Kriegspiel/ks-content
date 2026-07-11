@@ -1,94 +1,149 @@
 ---
 title: "Llama models playing Kriegspiel in the dark"
 slug: "llama-model-kriegspiel-tournament"
-summary: "An in-progress report on Llama model self-play in Berkeley + Any Kriegspiel, with proper outcomes separated from resignations and technical timeouts."
+summary: "A draft setup note for choosing the strongest LLM bots through family-level Kriegspiel tournaments, starting with Llama self-play."
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-09"
+updatedAt: "2026-07-11"
 author: "Kriegspiel Team"
 tags: ["research", "bots", "llm", "tournament", "berkeley-any"]
 draft: true
 lifecycle: draft
 ---
 
-This is an in-progress report. The games are still running, so the tables below are a snapshot, not a final tournament result.
+This is an in-progress report. The data tables will come later; this draft
+starts with the tournament design, the outcome rules, and the way LLM bots are
+prompted to play.
 
-The experiment is simple: let three Llama-family language models play hidden-information chess against each other on the Kriegspiel platform, then count only games that reached an ordinary chess ending. The models were:
+We are adding a large set of LLM-powered bots to the Kriegspiel platform. That
+is exciting, but it creates a practical problem: many models either perform very
+similarly or perform badly enough that they are not useful opponents. Listing
+every available model as a first-class bot would make the bot roster noisy
+without necessarily giving players better games.
 
-| Model label | Platform bot |
+The tournament is our filter. We want to find the strongest and most reliable
+bots before deciding which ones should be promoted, compared across families, or
+used as long-running opponents on the platform.
+
+## Family brackets
+
+The first step is to run tournaments within a single LLM family. A Llama bot
+plays other Llama bots, a Nemotron bot plays other Nemotron bots, a Mistral bot
+plays other Mistral bots, and so on.
+
+That gives each family its own bracket:
+
+| Family bracket | What it compares |
 | --- | --- |
-| Llama 3.1 8B | `llm_llama31_8b` |
-| Llama 4 Scout | `llm_llama4_scout` |
-| Llama 4 Maverick | `llm_llama4_maverick` |
+| Llama | Llama-family model bots against each other. |
+| Nemotron | Nemotron-family model bots against each other. |
+| Mistral | Mistral-family model bots against each other. |
+| Gemma | Gemma-family model bots against each other. |
+| Gemini | Gemini-family model bots against each other. |
 
-All archived Llama-vs-Llama games in this snapshot used the `berkeley_any` ruleset: Berkeley Kriegspiel with the `Any?` pawn-capture question enabled.
+This post starts with the Llama bracket. The same method can be reused for the
+other families as more model bots are enabled.
 
-One unexpectedly good sign is that the bots are not just playing ordinary chess moves in the dark. They do make use of the `Any?` question when it is available, which means the games are exercising a real Kriegspiel rule rather than only a hidden-board version of regular chess.
+Family brackets keep the first comparison simple. Models in the same family
+often share architecture, provider behavior, prompt sensitivity, and failure
+modes. Before asking whether the best Llama is stronger than the best Mistral or
+Gemini, we first need to know which Llama, Mistral, or Gemini bot should
+represent its family at all.
 
-## Snapshot
+## Tournament setup
 
-Snapshot time: `2026-07-09 13:56 UTC`.
+The tournament is bot-vs-bot self-play on the live Kriegspiel platform. Each
+game uses the platform backend as referee, so the bots receive only the private
+player state and public referee messages that a real player would be allowed to
+see.
 
-| Pair | Archived games | Proper outcomes | Still needed for 20 proper outcomes |
-| --- | ---: | ---: | ---: |
-| Llama 4 Maverick vs Llama 4 Scout | 93 | 12 | 8 |
-| Llama 4 Maverick vs Llama 3.1 8B | 89 | 8 | 12 |
-| Llama 4 Scout vs Llama 3.1 8B | 92 | 2 | 18 |
-| Total | 274 | 22 | 38 |
+LLM games can become long and expensive, especially when both sides keep making
+legal but unproductive moves. To cap spend, each bot receives a per-game move
+limit. The limit is deliberately high enough that a reasonable human game should
+usually finish before reaching it, but low enough to stop games that drift
+forever.
 
-We call an outcome proper when the game ends by checkmate or stalemate/draw. In this snapshot, the proper outcomes are:
+Because each game is bot-versus-bot, the limit is randomized independently for
+each side. At the start of a game, the system picks two random numbers in the
+range 128-256:
 
-| Pair | Checkmates | Stalemates / draws | Proper total |
-| --- | ---: | ---: | ---: |
-| Llama 4 Maverick vs Llama 4 Scout | 10 | 2 | 12 |
-| Llama 4 Maverick vs Llama 3.1 8B | 7 | 1 | 8 |
-| Llama 4 Scout vs Llama 3.1 8B | 1 | 1 | 2 |
-| Total | 18 | 4 | 22 |
+| Side | Limit |
+| --- | --- |
+| White bot | Random move limit from 128 to 256. |
+| Black bot | Random move limit from 128 to 256. |
 
-Among proper outcomes, the current score is:
+If a side reaches its own limit, that bot resigns. Randomizing the limits avoids
+a systematic bias where White would always hit the cap first simply because
+White moves first.
 
-| Pair | Llama 4 Maverick wins | Llama 4 Scout wins | Llama 3.1 8B wins | Draws |
-| --- | ---: | ---: | ---: | ---: |
-| Llama 4 Maverick vs Llama 4 Scout | 10 | 0 | - | 2 |
-| Llama 4 Maverick vs Llama 3.1 8B | 6 | - | 1 | 1 |
-| Llama 4 Scout vs Llama 3.1 8B | - | 0 | 1 | 1 |
+## Outcome categories
 
-That makes Maverick the clear early leader among proper outcomes. The important caveat is sample size: Maverick vs Scout has only 12 proper outcomes, Maverick vs 3.1 8B has 8, and Scout vs 3.1 8B has only 2. The direction is visible, but the confidence bands are still wide.
+The archive can contain several kinds of completed games:
 
-## Why we ignore resignation and timeout
+| Outcome | How we treat it |
+| --- | --- |
+| Checkmate | Proper outcome. |
+| Stalemate or draw | Proper outcome. |
+| Resignation after move cap | Operational outcome. |
+| Timeout | Operational outcome. |
 
-The archive contains many more completed games than proper outcomes:
+For this tournament, a proper outcome is a game that reaches an ordinary chess
+ending: checkmate, stalemate, insufficient material, repetition, or another draw
+condition handled by the platform rules. These outcomes say something about the
+quality of the moves inside the game.
 
-| End reason | Count |
-| --- | ---: |
-| Timeout | 174 |
-| Resignation | 78 |
-| Checkmate | 18 |
-| Stalemate | 4 |
+Resignation is different in this setup. A bot may resign because it hit the
+randomized move cap, not because the model understood that the position was
+lost. That makes resignation useful for operations, but not clean evidence of
+chess strength.
 
-Timeouts and resignations are real platform results, but they are not clean chess evidence for this experiment.
+Timeout is also operational. LLM APIs can be slow, unavailable, rate-limited, or
+delayed by provider-side load. A timeout tells us something about runtime
+reliability and provider latency, but it is not the same as being outplayed on
+the board.
 
-Timeout is mostly a technical outcome. It can happen when a bot is delayed by provider API latency, provider overload, process scheduling, or other runtime issues. A timeout tells us something about tournament operations and provider reliability, but it is not the same as one model outplaying another on the board.
+For the result tables, we will therefore focus on proper outcomes. Resignations
+and timeouts will still be reported, but they will not decide which model is the
+best player in the bracket.
 
-Resignation is also operational in these bot-vs-bot games. LLM Kriegspiel games can become extremely long. To keep the tournament moving, bot-vs-bot LLM games receive randomized per-color turn limits in the 128-256 range. When a bot reaches its visible limit, it resigns. This avoids games lasting indefinitely, but it means resignation is partly a length-control mechanism rather than a pure chess conclusion.
+## LLM bot gameplay
 
-For that reason, this report treats only checkmates and stalemates/draws as proper outcomes.
+The Llama bots use the shared `bot-openai-compatible` runtime. The runtime is
+conservative by design: the backend remains the source of truth, and a model
+answer is never played unless it passes local validation against the
+server-provided action list.
 
-## How the bots are prompted
+On each turn, the runtime builds two messages for the model:
 
-The Llama bots use the shared `bot-openai-compatible` runtime. The runtime is intentionally conservative: the backend remains the source of truth, and the model never gets to move unless its answer passes local validation against the server-provided action list.
+1. A system prompt that explains the simplified rules, the hidden-information
+   boundary, and the required response format.
+2. A user prompt that contains the current player-visible game state and the
+   legal actions available on this turn.
 
-The system prompt contains:
+The model is not asked to invent the full hidden board. It is asked to rank
+legal actions using only the state it has been given.
+
+## System prompt
+
+The system prompt has a stable structure:
 
 | Prompt part | Purpose |
 | --- | --- |
 | Role | Tells the model it is playing Kriegspiel. |
-| Information boundary | Tells it to use only provided private information and legal actions. |
+| Rules summary | Gives the simplified rules for the active variant. |
+| Information boundary | Tells the model to use only the private state and public messages supplied in the prompt. |
 | Output contract | Requires compact JSON shaped like `{"m":["e2e4","d2d4","ask_any"]}`. |
-| Ranking rule | Requires exactly `n` unique entries ordered best to worst. |
-| Legality rule | Requires every move entry to match one item in the supplied `moves` list. |
-| Ruleset summary | Injects the concise rules summary for the current variant, here Berkeley + Any. |
+| Ranking rule | Requires exactly `n` unique actions ordered from best to worst. |
+| Legality rule | Requires every action to match one item in the supplied legal action list. |
 
-The user prompt for each turn is a compact JSON snapshot. Its keys are deliberately short:
+The rules summary is variant-specific. For this Llama run, the games use
+`berkeley_any`: Berkeley Kriegspiel with the `Any?` pawn-capture question
+enabled.
+
+## User prompt
+
+The user prompt for each turn is a compact JSON snapshot. Its keys are short so
+that the bot spends fewer tokens on repeated field names and more of its context
+on the actual position.
 
 | Key | Meaning |
 | --- | --- |
@@ -100,14 +155,22 @@ The user prompt for each turn is a compact JSON snapshot. Its keys are deliberat
 | `hist` | Recent scorecard turns from the viewer's perspective. |
 | `act` | Possible action kinds, such as `move` or `ask_any`. |
 | `moves` | Server-provided legal UCI moves. |
-| `n` | Target number of ranked candidates. Normally this is 10, capped by available actions. |
+| `n` | Target number of ranked candidates, capped by available actions. |
 | `res` | CrazyKrieg reserve summary when that ruleset is active. |
 | `rej` | Recently rejected candidate actions for the current turn. |
 | `fb` | Retry feedback, including rejected moves and fresh referee announcements. |
 
-The `hist` field is the compact scorecard. It carries recent entries for both white and black, but only as visible from the bot's allowed perspective. Depending on the ruleset and perspective, scorecard entries can include move-complete messages, illegal-move rejections, capture announcements, check announcements, pawn-capture question answers, and the move UCI when the server exposes it to that player. The prompt does not expose a hidden omniscient board.
+The `hist` field is the compact scorecard. It carries recent entries for both
+White and Black, but only as visible from the bot's allowed perspective.
+Depending on the ruleset and perspective, scorecard entries can include
+move-complete messages, illegal-move rejections, capture announcements, check
+announcements, pawn-capture question answers, and the move UCI when the server
+exposes it to that player. The prompt does not expose an omniscient board.
 
-The model is asked for a prioritized move list, not a single move. A typical response is:
+## Expected response
+
+The model is asked for a prioritized move list, not a single move. A typical
+response is:
 
 ```json
 {"m":["e2e4","d2d4","g1f3","b1c3","c2c4","f2f4","e2e3","d2d3","g2g3","b2b3"]}
@@ -117,48 +180,35 @@ The runtime then:
 
 1. Parses the JSON response.
 2. Deduplicates the ranked entries.
-3. Rejects anything not present in the server-provided legal move list.
+3. Rejects anything not present in the server-provided legal action list.
 4. Tries the remaining candidates in order.
 5. Records rejected attempts in `rej`.
 6. Adds retry text in `fb`.
-7. If the whole batch fails, asks the model for another ranked batch, up to the configured retry limit.
-8. Falls back to a deterministic legal action if the model response is malformed, unavailable, or empty.
+7. If the whole batch fails, asks the model for another ranked batch, up to the
+   configured retry limit.
+8. Falls back to a deterministic legal action if the model response is
+   malformed, unavailable, or empty.
 
-In the current production configuration, the bot asks for 10 ranked candidates per call when at least 10 actions are available, and can ask for up to 5 batches in a single turn if earlier batches fail.
+In the current production configuration, the bot asks for 10 ranked candidates
+per call when at least 10 actions are available, and can ask for up to 5 batches
+in a single turn if earlier batches fail.
 
-## What the current result suggests
+## What the results section should add
 
-The cleanest early signal is Maverick's strength in proper games:
+Once the Llama run has enough games, the data section should report:
 
-| Pair | Proper outcome result |
-| --- | --- |
-| Maverick vs Scout | Maverick 10 wins, 2 draws, Scout 0 wins |
-| Maverick vs Llama 3.1 8B | Maverick 6 wins, Llama 3.1 8B 1 win, 1 draw |
-| Scout vs Llama 3.1 8B | Llama 3.1 8B 1 win, 1 draw |
+- the snapshot time
+- the Llama models included
+- archived games by pair
+- proper outcomes by pair
+- checkmates, stalemates, and draws
+- wins, losses, and draws among proper outcomes
+- resignation and timeout counts as operational context
 
-The Scout vs Llama 3.1 8B pairing is the bottleneck. It has produced only 2 proper outcomes from 92 archived games in this snapshot. That does not yet tell us much about who is stronger in that pair. It mostly tells us that getting clean chess endings from that pairing is hard.
+The goal is not to make a general-purpose LLM benchmark. It is narrower: can a
+model repeatedly choose legal and useful Kriegspiel actions under hidden
+information, using only its private board, public referee messages, and the
+legal action list?
 
-The target for this run is 20 proper outcomes for each pair, 60 proper outcomes total. Once the run reaches that point, the comparison will be much more balanced:
-
-| Pair | Current proper outcomes | Target |
-| --- | ---: | ---: |
-| Maverick vs Scout | 12 | 20 |
-| Maverick vs Llama 3.1 8B | 8 | 20 |
-| Scout vs Llama 3.1 8B | 2 | 20 |
-
-The final post should update every table above after the live campaign finishes.
-
-## What this experiment measures
-
-This is not a general-purpose LLM benchmark. It measures a narrower behavior: can a model repeatedly choose legal and strategically useful actions under hidden information, using only the platform's private player state, public referee messages, and legal action list?
-
-That is a useful test because Kriegspiel stresses several model capabilities at once:
-
-- following a compact structured prompt
-- preserving hidden-information boundaries
-- ranking multiple legal actions
-- reacting to referee feedback
-- using scorecard history without inventing hidden state
-- continuing play through long, noisy games
-
-The result is partly about chess strength, partly about instruction following, and partly about operational robustness. Separating proper outcomes from timeouts and operational resignations is what lets the chess signal become visible.
+That is the signal we want before deciding which LLM bots deserve a permanent
+place on the platform.
