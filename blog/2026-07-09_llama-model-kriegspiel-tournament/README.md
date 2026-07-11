@@ -237,6 +237,31 @@ The surprising result is how well Small 3.2 performs. It is the clear Mistral
 bot to keep visible. Large 3 can remain available for players who explicitly
 want to try it, but it should not be promoted as a broadly visible opponent.
 
+## Gemma bracket
+
+The Gemma-family result is less one-sided than the Llama bracket. Gemma 3 4B is
+surprisingly competitive in parts of the bracket, especially for a smaller
+model. As above, each score is shown from the row bot's perspective as
+wins-losses-draws.
+
+| Bot \ Opponent | Gemma 3 4B | Gemma 3 27B | Gemma 4 31B |
+| --- | ---: | ---: | ---: |
+| Gemma 3 4B | - | 2-0-4 | 1-2-0 |
+| Gemma 3 27B | 4-0-2 | - | 1-0-6 |
+| Gemma 4 31B | 0-2-1 | 6-0-1 | - |
+
+Aggregating games from both table directions gives:
+
+| Model | Wins | Losses | Draws |
+| --- | ---: | ---: | ---: |
+| Gemma 4 31B | 8 | 4 | 8 |
+| Gemma 3 4B | 5 | 6 | 7 |
+| Gemma 3 27B | 5 | 8 | 13 |
+
+Even with the interesting Gemma 3 4B result, Gemma 4 31B is the Gemma model to
+keep visible by default. The other Gemma models can remain available for
+history and for players who explicitly want to try them.
+
 ## What the remaining result sections should add
 
 Once each family run has enough games, the data section should report:
