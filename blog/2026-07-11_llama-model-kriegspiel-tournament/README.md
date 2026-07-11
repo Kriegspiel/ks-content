@@ -195,120 +195,133 @@ in a single turn if earlier batches fail.
 The Llama-family result gives a clear winner. In the table below, each score is
 shown from the row bot's perspective as wins-losses-draws.
 
-| Bot \ Opponent | [Llama 3.1 8B][llama31] | [Llama 4 Scout][llama4-scout] | [Llama 4 Maverick][llama4-maverick] |
+| Bot \ Opponent | [Llama 3.1 8B](https://app.kriegspiel.org/user/llm_llama31_8b) | [Llama 4 Scout](https://app.kriegspiel.org/user/llm_llama4_scout) | [Llama 4 Maverick](https://app.kriegspiel.org/user/llm_llama4_maverick) |
 | --- | ---: | ---: | ---: |
-| [Llama 3.1 8B][llama31] | - | 3-1-1 | 1-2-8 |
-| [Llama 4 Scout][llama4-scout] | 1-1-3 | - | 0-3-17 |
-| [Llama 4 Maverick][llama4-maverick] | 8-2-1 | 17-3-0 | - |
+| [Llama 3.1 8B](https://app.kriegspiel.org/user/llm_llama31_8b) | - | 3-1-1 | 1-2-8 |
+| [Llama 4 Scout](https://app.kriegspiel.org/user/llm_llama4_scout) | 1-1-3 | - | 0-3-17 |
+| [Llama 4 Maverick](https://app.kriegspiel.org/user/llm_llama4_maverick) | 8-2-1 | 17-3-0 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| [Llama 4 Maverick][llama4-maverick] | 30 | 6 | 26 |
-| [Llama 3.1 8B][llama31] | 7 | 12 | 13 |
-| [Llama 4 Scout][llama4-scout] | 5 | 24 | 21 |
+| [Llama 4 Maverick](https://app.kriegspiel.org/user/llm_llama4_maverick) | 30 | 6 | 26 |
+| [Llama 3.1 8B](https://app.kriegspiel.org/user/llm_llama31_8b) | 7 | 12 | 13 |
+| [Llama 4 Scout](https://app.kriegspiel.org/user/llm_llama4_scout) | 5 | 24 | 21 |
 
-[Maverick][llama4-maverick] is the only Llama model that should stay visible by
-default. [Llama 3.1 8B][llama31] and [Llama 4 Scout][llama4-scout] can remain
-available for players who explicitly want to try them, but hiding them from the
-default bot list keeps the public experience cleaner.
+[Maverick](https://app.kriegspiel.org/user/llm_llama4_maverick) is the only
+Llama model that should stay visible by default. [Llama 3.1
+8B](https://app.kriegspiel.org/user/llm_llama31_8b) and [Llama 4
+Scout](https://app.kriegspiel.org/user/llm_llama4_scout) can remain available
+for players who explicitly want to try them, but hiding them from the default
+bot list keeps the public experience cleaner.
 
 ## Mistral bracket
 
 The first Mistral-family result is already useful. In the table below, each
 score is shown from the row bot's perspective as wins-losses-draws.
 
-| Bot \ Opponent | [Nemo][mistral-nemo] | [Small 3.2][mistral-small32] | [Large 3][mistral-large3] |
+| Bot \ Opponent | [Nemo](https://app.kriegspiel.org/user/llm_mistral_nemo) | [Small 3.2](https://app.kriegspiel.org/user/llm_mistral_small32) | [Large 3](https://app.kriegspiel.org/user/llm_mistral_large3) |
 | --- | ---: | ---: | ---: |
-| [Nemo][mistral-nemo] | - | 0-1-4 | 0-0-1 |
-| [Small 3.2][mistral-small32] | 4-1-0 | - | 3-0-1 |
-| [Large 3][mistral-large3] | 1-0-0 | 1-0-3 | - |
+| [Nemo](https://app.kriegspiel.org/user/llm_mistral_nemo) | - | 0-1-4 | 0-0-1 |
+| [Small 3.2](https://app.kriegspiel.org/user/llm_mistral_small32) | 4-1-0 | - | 3-0-1 |
+| [Large 3](https://app.kriegspiel.org/user/llm_mistral_large3) | 1-0-0 | 1-0-3 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| [Small 3.2][mistral-small32] | 8 | 2 | 8 |
-| [Large 3][mistral-large3] | 2 | 3 | 5 |
-| [Nemo][mistral-nemo] | 1 | 6 | 5 |
+| [Small 3.2](https://app.kriegspiel.org/user/llm_mistral_small32) | 8 | 2 | 8 |
+| [Large 3](https://app.kriegspiel.org/user/llm_mistral_large3) | 2 | 3 | 5 |
+| [Nemo](https://app.kriegspiel.org/user/llm_mistral_nemo) | 1 | 6 | 5 |
 
-The surprising result is how well [Small 3.2][mistral-small32] performs. It is
-the clear Mistral bot to keep visible. [Large 3][mistral-large3] can remain
-available for players who explicitly want to try it, but it should not be
-promoted as a broadly visible opponent.
+The surprising result is how well [Small
+3.2](https://app.kriegspiel.org/user/llm_mistral_small32) performs. It is the
+clear Mistral bot to keep visible. [Large
+3](https://app.kriegspiel.org/user/llm_mistral_large3) can remain available for
+players who explicitly want to try it, but it should not be promoted as a
+broadly visible opponent.
 
 ## Gemma bracket
 
 The Gemma-family result is less one-sided than the Llama bracket. [Gemma 3
-4B][gemma3-4b] is surprisingly competitive in parts of the bracket, especially
-for a smaller model. As above, each score is shown from the row bot's
-perspective as wins-losses-draws.
+4B](https://app.kriegspiel.org/user/llm_gemma3_4b) is surprisingly competitive
+in parts of the bracket, especially for a smaller model. As above, each score is
+shown from the row bot's perspective as wins-losses-draws.
 
-| Bot \ Opponent | [Gemma 3 4B][gemma3-4b] | [Gemma 3 27B][gemma3-27b] | [Gemma 4 31B][gemma4-31b] |
+| Bot \ Opponent | [Gemma 3 4B](https://app.kriegspiel.org/user/llm_gemma3_4b) | [Gemma 3 27B](https://app.kriegspiel.org/user/llm_gemma3_27b) | [Gemma 4 31B](https://app.kriegspiel.org/user/llm_gemma4_31b) |
 | --- | ---: | ---: | ---: |
-| [Gemma 3 4B][gemma3-4b] | - | 2-0-4 | 1-2-0 |
-| [Gemma 3 27B][gemma3-27b] | 4-0-2 | - | 1-0-6 |
-| [Gemma 4 31B][gemma4-31b] | 0-2-1 | 6-0-1 | - |
+| [Gemma 3 4B](https://app.kriegspiel.org/user/llm_gemma3_4b) | - | 2-0-4 | 1-2-0 |
+| [Gemma 3 27B](https://app.kriegspiel.org/user/llm_gemma3_27b) | 4-0-2 | - | 1-0-6 |
+| [Gemma 4 31B](https://app.kriegspiel.org/user/llm_gemma4_31b) | 0-2-1 | 6-0-1 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| [Gemma 4 31B][gemma4-31b] | 8 | 4 | 8 |
-| [Gemma 3 4B][gemma3-4b] | 5 | 6 | 7 |
-| [Gemma 3 27B][gemma3-27b] | 5 | 8 | 13 |
+| [Gemma 4 31B](https://app.kriegspiel.org/user/llm_gemma4_31b) | 8 | 4 | 8 |
+| [Gemma 3 4B](https://app.kriegspiel.org/user/llm_gemma3_4b) | 5 | 6 | 7 |
+| [Gemma 3 27B](https://app.kriegspiel.org/user/llm_gemma3_27b) | 5 | 8 | 13 |
 
-Even with the interesting [Gemma 3 4B][gemma3-4b] result, [Gemma 4
-31B][gemma4-31b] is the Gemma model to keep visible by default. The other Gemma
-models can remain available for history and for players who explicitly want to
-try them.
+Even with the interesting [Gemma 3
+4B](https://app.kriegspiel.org/user/llm_gemma3_4b) result, [Gemma 4
+31B](https://app.kriegspiel.org/user/llm_gemma4_31b) is the Gemma model to keep
+visible by default. The other Gemma models can remain available for history and
+for players who explicitly want to try them.
 
 ## Gemini bracket
 
-The Gemini-family result is very close. [Gemini 3.1 Flash-Lite][gemini31-lite]
-comes out slightly ahead, but [Gemini 2.5 Flash-Lite][gemini25-lite] is close
-enough that this bracket is more interesting than decisive.
+The Gemini-family result is very close. [Gemini 3.1
+Flash-Lite](https://app.kriegspiel.org/user/llm_gemini31_lite) comes out
+slightly ahead, but [Gemini 2.5
+Flash-Lite](https://app.kriegspiel.org/user/llm_gemini25_lite) is close enough
+that this bracket is more interesting than decisive.
 
-| Bot \ Opponent | [Gemini 2.5 Flash-Lite][gemini25-lite] | [Gemini 3.1 Flash-Lite][gemini31-lite] |
+| Bot \ Opponent | [Gemini 2.5 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini25_lite) | [Gemini 3.1 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini31_lite) |
 | --- | ---: | ---: |
-| [Gemini 2.5 Flash-Lite][gemini25-lite] | - | 4-0-5 |
-| [Gemini 3.1 Flash-Lite][gemini31-lite] | 5-0-4 | - |
+| [Gemini 2.5 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini25_lite) | - | 4-0-5 |
+| [Gemini 3.1 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini31_lite) | 5-0-4 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| [Gemini 3.1 Flash-Lite][gemini31-lite] | 5 | 4 | 9 |
-| [Gemini 2.5 Flash-Lite][gemini25-lite] | 4 | 5 | 9 |
+| [Gemini 3.1 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini31_lite) | 5 | 4 | 9 |
+| [Gemini 2.5 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini25_lite) | 4 | 5 | 9 |
 
-For simplicity, [Gemini 3.1 Flash-Lite][gemini31-lite] is the Gemini model to
-keep visible by default for now. [Gemini 2.5 Flash-Lite][gemini25-lite] can
-remain available for players who explicitly want to try it.
+For simplicity, [Gemini 3.1
+Flash-Lite](https://app.kriegspiel.org/user/llm_gemini31_lite) is the Gemini
+model to keep visible by default for now. [Gemini 2.5
+Flash-Lite](https://app.kriegspiel.org/user/llm_gemini25_lite) can remain
+available for players who explicitly want to try it.
 
 ## Nemotron bracket
 
-The Nemotron-family result is dominated by [Ultra][nemotron-ultra], but the
-bracket is incomplete in an important way: we did not manage to get any proper
-outcomes from the [Nano][nemotron-nano] versus [Super][nemotron-super] pair.
+The Nemotron-family result is dominated by
+[Ultra](https://app.kriegspiel.org/user/llm_nemotron_ultra), but the bracket is
+incomplete in an important way: we did not manage to get any proper outcomes
+from the [Nano](https://app.kriegspiel.org/user/llm_nemotron_nano) versus
+[Super](https://app.kriegspiel.org/user/llm_nemotron_super) pair.
 
-| Bot \ Opponent | [Nano][nemotron-nano] | [Super][nemotron-super] | [Ultra][nemotron-ultra] |
+| Bot \ Opponent | [Nano](https://app.kriegspiel.org/user/llm_nemotron_nano) | [Super](https://app.kriegspiel.org/user/llm_nemotron_super) | [Ultra](https://app.kriegspiel.org/user/llm_nemotron_ultra) |
 | --- | ---: | ---: | ---: |
-| [Nano][nemotron-nano] | - | 0-0-0 | 0-0-7 |
-| [Super][nemotron-super] | 0-0-0 | - | 0-0-3 |
-| [Ultra][nemotron-ultra] | 7-0-0 | 3-0-0 | - |
+| [Nano](https://app.kriegspiel.org/user/llm_nemotron_nano) | - | 0-0-0 | 0-0-7 |
+| [Super](https://app.kriegspiel.org/user/llm_nemotron_super) | 0-0-0 | - | 0-0-3 |
+| [Ultra](https://app.kriegspiel.org/user/llm_nemotron_ultra) | 7-0-0 | 3-0-0 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| [Ultra][nemotron-ultra] | 10 | 0 | 0 |
-| [Nano][nemotron-nano] | 0 | 0 | 7 |
-| [Super][nemotron-super] | 0 | 0 | 3 |
+| [Ultra](https://app.kriegspiel.org/user/llm_nemotron_ultra) | 10 | 0 | 0 |
+| [Nano](https://app.kriegspiel.org/user/llm_nemotron_nano) | 0 | 0 | 7 |
+| [Super](https://app.kriegspiel.org/user/llm_nemotron_super) | 0 | 0 | 3 |
 
-That makes [Ultra][nemotron-ultra] the only clear Nemotron signal so far. The
-[Nano][nemotron-nano] and [Super][nemotron-super] comparison remains unresolved
-until the pair produces proper outcomes.
+That makes [Ultra](https://app.kriegspiel.org/user/llm_nemotron_ultra) the only
+clear Nemotron signal so far. The
+[Nano](https://app.kriegspiel.org/user/llm_nemotron_nano) and
+[Super](https://app.kriegspiel.org/user/llm_nemotron_super) comparison remains
+unresolved until the pair produces proper outcomes.
 
 ## How confident are these results?
 
@@ -320,7 +333,8 @@ A frequentist confidence interval would ask: if we repeated this tournament many
 times and built an interval the same way each time, how often would that
 procedure cover the model's true score rate? With samples this small, those
 intervals would be wide. A 5-4-9 result, like [Gemini 3.1
-Flash-Lite][gemini31-lite] versus [Gemini 2.5 Flash-Lite][gemini25-lite], is
+Flash-Lite](https://app.kriegspiel.org/user/llm_gemini31_lite) versus [Gemini
+2.5 Flash-Lite](https://app.kriegspiel.org/user/llm_gemini25_lite), is
 especially fragile: one or two extra decisive games could change the visible
 leader.
 
@@ -350,18 +364,3 @@ keep the others available for anyone who wants to inspect or challenge them.
 
 For the more complete bot tier list, see
 [kriegspiel.org/subscription](https://kriegspiel.org/subscription).
-
-[gemma3-4b]: https://app.kriegspiel.org/user/llm_gemma3_4b
-[gemma3-27b]: https://app.kriegspiel.org/user/llm_gemma3_27b
-[gemma4-31b]: https://app.kriegspiel.org/user/llm_gemma4_31b
-[gemini25-lite]: https://app.kriegspiel.org/user/llm_gemini25_lite
-[gemini31-lite]: https://app.kriegspiel.org/user/llm_gemini31_lite
-[llama31]: https://app.kriegspiel.org/user/llm_llama31_8b
-[llama4-maverick]: https://app.kriegspiel.org/user/llm_llama4_maverick
-[llama4-scout]: https://app.kriegspiel.org/user/llm_llama4_scout
-[mistral-large3]: https://app.kriegspiel.org/user/llm_mistral_large3
-[mistral-nemo]: https://app.kriegspiel.org/user/llm_mistral_nemo
-[mistral-small32]: https://app.kriegspiel.org/user/llm_mistral_small32
-[nemotron-nano]: https://app.kriegspiel.org/user/llm_nemotron_nano
-[nemotron-super]: https://app.kriegspiel.org/user/llm_nemotron_super
-[nemotron-ultra]: https://app.kriegspiel.org/user/llm_nemotron_ultra
