@@ -190,12 +190,35 @@ In the current production configuration, the bot asks for 10 ranked candidates
 per call when at least 10 actions are available, and can ask for up to 5 batches
 in a single turn if earlier batches fail.
 
-## What the results section should add
+## Mistral bracket
 
-Once the Llama run has enough games, the data section should report:
+The first Mistral-family result is already useful. In the table below, each
+score is shown from the row bot's perspective as wins-losses-draws.
+
+| Bot \ Opponent | Nemo | Small 3.2 | Large 3 |
+| --- | ---: | ---: | ---: |
+| Nemo | - | 0-1-4 | 0-0-1 |
+| Small 3.2 | 4-1-0 | - | 3-0-1 |
+| Large 3 | 1-0-0 | 1-0-3 | - |
+
+Aggregating games from both table directions gives:
+
+| Model | Wins | Losses | Draws |
+| --- | ---: | ---: | ---: |
+| Small 3.2 | 8 | 2 | 8 |
+| Large 3 | 2 | 3 | 5 |
+| Nemo | 1 | 6 | 5 |
+
+The surprising result is how well Small 3.2 performs. It is the clear Mistral
+bot to keep visible. Large 3 can remain available for players who explicitly
+want to try it, but it should not be promoted as a broadly visible opponent.
+
+## What the remaining result sections should add
+
+Once each family run has enough games, the data section should report:
 
 - the snapshot time
-- the Llama models included
+- the models included
 - archived games by pair
 - proper outcomes by pair
 - checkmates, stalemates, and draws
