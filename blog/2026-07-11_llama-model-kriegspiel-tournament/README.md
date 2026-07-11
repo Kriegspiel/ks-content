@@ -1,13 +1,13 @@
 ---
-title: "Llama models playing Kriegspiel in the dark"
+title: "LLM bots playing Kriegspiel in the dark"
 slug: "llama-model-kriegspiel-tournament"
-summary: "A draft setup note and early bracket results for choosing the strongest LLM bots through family-level Kriegspiel tournaments."
-publishedAt: "2026-07-09"
+summary: "A setup note and early bracket results for choosing the strongest LLM bots through family-level Kriegspiel tournaments."
+publishedAt: "2026-07-11"
 updatedAt: "2026-07-11"
 author: "Kriegspiel Team"
 tags: ["research", "bots", "llm", "tournament", "berkeley-any"]
-draft: true
-lifecycle: draft
+draft: false
+lifecycle: published
 ---
 
 We are adding a large set of LLM-powered bots to the Kriegspiel platform. That
