@@ -286,6 +286,30 @@ For simplicity, [Gemini 3.1 Flash-Lite][gemini31-lite] is the Gemini model to
 keep visible by default for now. [Gemini 2.5 Flash-Lite][gemini25-lite] can
 remain available for players who explicitly want to try it.
 
+## Nemotron bracket
+
+The Nemotron-family result is dominated by [Ultra][nemotron-ultra], but the
+bracket is incomplete in an important way: we did not manage to get any proper
+outcomes from the [Nano][nemotron-nano] versus [Super][nemotron-super] pair.
+
+| Bot \ Opponent | [Nano][nemotron-nano] | [Super][nemotron-super] | [Ultra][nemotron-ultra] |
+| --- | ---: | ---: | ---: |
+| [Nano][nemotron-nano] | - | 0-0-0 | 0-0-7 |
+| [Super][nemotron-super] | 0-0-0 | - | 0-0-3 |
+| [Ultra][nemotron-ultra] | 7-0-0 | 3-0-0 | - |
+
+Aggregating games from both table directions gives:
+
+| Model | Wins | Losses | Draws |
+| --- | ---: | ---: | ---: |
+| [Ultra][nemotron-ultra] | 10 | 0 | 0 |
+| [Nano][nemotron-nano] | 0 | 0 | 7 |
+| [Super][nemotron-super] | 0 | 0 | 3 |
+
+That makes [Ultra][nemotron-ultra] the only clear Nemotron signal so far. The
+[Nano][nemotron-nano] and [Super][nemotron-super] comparison remains unresolved
+until the pair produces proper outcomes.
+
 ## How confident are these results?
 
 Not very confident yet. The strongest results above are useful product signals,
@@ -346,3 +370,6 @@ place on the platform.
 [mistral-large3]: https://app.kriegspiel.org/user/llm_mistral_large3
 [mistral-nemo]: https://app.kriegspiel.org/user/llm_mistral_nemo
 [mistral-small32]: https://app.kriegspiel.org/user/llm_mistral_small32
+[nemotron-nano]: https://app.kriegspiel.org/user/llm_nemotron_nano
+[nemotron-super]: https://app.kriegspiel.org/user/llm_nemotron_super
+[nemotron-ultra]: https://app.kriegspiel.org/user/llm_nemotron_ultra
