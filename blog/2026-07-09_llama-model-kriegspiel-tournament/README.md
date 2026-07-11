@@ -1,7 +1,7 @@
 ---
 title: "Llama models playing Kriegspiel in the dark"
 slug: "llama-model-kriegspiel-tournament"
-summary: "A draft setup note for choosing the strongest LLM bots through family-level Kriegspiel tournaments, starting with Llama self-play."
+summary: "A draft setup note and early bracket results for choosing the strongest LLM bots through family-level Kriegspiel tournaments."
 publishedAt: "2026-07-09"
 updatedAt: "2026-07-11"
 author: "Kriegspiel Team"
@@ -189,6 +189,30 @@ The runtime then:
 In the current production configuration, the bot asks for 10 ranked candidates
 per call when at least 10 actions are available, and can ask for up to 5 batches
 in a single turn if earlier batches fail.
+
+## Llama bracket
+
+The Llama-family result gives a clear winner. In the table below, each score is
+shown from the row bot's perspective as wins-losses-draws.
+
+| Bot \ Opponent | Llama 3.1 8B | Llama 4 Scout | Llama 4 Maverick |
+| --- | ---: | ---: | ---: |
+| Llama 3.1 8B | - | 3-1-1 | 1-2-8 |
+| Llama 4 Scout | 1-1-3 | - | 0-3-17 |
+| Llama 4 Maverick | 8-2-1 | 17-3-0 | - |
+
+Aggregating games from both table directions gives:
+
+| Model | Wins | Losses | Draws |
+| --- | ---: | ---: | ---: |
+| Llama 4 Maverick | 30 | 6 | 26 |
+| Llama 3.1 8B | 7 | 12 | 13 |
+| Llama 4 Scout | 5 | 24 | 21 |
+
+Maverick is the only Llama model that should stay visible by default. Llama 3.1
+8B and Llama 4 Scout can remain available for players who explicitly want to
+try them, but hiding them from the default bot list keeps the public experience
+cleaner.
 
 ## Mistral bracket
 
