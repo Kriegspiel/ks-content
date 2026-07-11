@@ -264,6 +264,28 @@ Even with the interesting [Gemma 3 4B][gemma3-4b] result, [Gemma 4
 models can remain available for history and for players who explicitly want to
 try them.
 
+## Gemini bracket
+
+The Gemini-family result is very close. [Gemini 3.1 Flash-Lite][gemini31-lite]
+comes out slightly ahead, but [Gemini 2.5 Flash-Lite][gemini25-lite] is close
+enough that this bracket is more interesting than decisive.
+
+| Bot \ Opponent | [Gemini 2.5 Flash-Lite][gemini25-lite] | [Gemini 3.1 Flash-Lite][gemini31-lite] |
+| --- | ---: | ---: |
+| [Gemini 2.5 Flash-Lite][gemini25-lite] | - | 4-0-5 |
+| [Gemini 3.1 Flash-Lite][gemini31-lite] | 5-0-4 | - |
+
+Aggregating games from both table directions gives:
+
+| Model | Wins | Losses | Draws |
+| --- | ---: | ---: | ---: |
+| [Gemini 3.1 Flash-Lite][gemini31-lite] | 5 | 4 | 9 |
+| [Gemini 2.5 Flash-Lite][gemini25-lite] | 4 | 5 | 9 |
+
+For simplicity, [Gemini 3.1 Flash-Lite][gemini31-lite] is the Gemini model to
+keep visible by default for now. [Gemini 2.5 Flash-Lite][gemini25-lite] can
+remain available for players who explicitly want to try it.
+
 ## What the remaining result sections should add
 
 Once each family run has enough games, the data section should report:
@@ -287,6 +309,8 @@ place on the platform.
 [gemma3-4b]: https://app.kriegspiel.org/user/llm_gemma3_4b
 [gemma3-27b]: https://app.kriegspiel.org/user/llm_gemma3_27b
 [gemma4-31b]: https://app.kriegspiel.org/user/llm_gemma4_31b
+[gemini25-lite]: https://app.kriegspiel.org/user/llm_gemini25_lite
+[gemini31-lite]: https://app.kriegspiel.org/user/llm_gemini31_lite
 [llama31]: https://app.kriegspiel.org/user/llm_llama31_8b
 [llama4-maverick]: https://app.kriegspiel.org/user/llm_llama4_maverick
 [llama4-scout]: https://app.kriegspiel.org/user/llm_llama4_scout
