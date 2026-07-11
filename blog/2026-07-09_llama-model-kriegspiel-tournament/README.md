@@ -195,72 +195,74 @@ in a single turn if earlier batches fail.
 The Llama-family result gives a clear winner. In the table below, each score is
 shown from the row bot's perspective as wins-losses-draws.
 
-| Bot \ Opponent | Llama 3.1 8B | Llama 4 Scout | Llama 4 Maverick |
+| Bot \ Opponent | [Llama 3.1 8B][llama31] | [Llama 4 Scout][llama4-scout] | [Llama 4 Maverick][llama4-maverick] |
 | --- | ---: | ---: | ---: |
-| Llama 3.1 8B | - | 3-1-1 | 1-2-8 |
-| Llama 4 Scout | 1-1-3 | - | 0-3-17 |
-| Llama 4 Maverick | 8-2-1 | 17-3-0 | - |
+| [Llama 3.1 8B][llama31] | - | 3-1-1 | 1-2-8 |
+| [Llama 4 Scout][llama4-scout] | 1-1-3 | - | 0-3-17 |
+| [Llama 4 Maverick][llama4-maverick] | 8-2-1 | 17-3-0 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| Llama 4 Maverick | 30 | 6 | 26 |
-| Llama 3.1 8B | 7 | 12 | 13 |
-| Llama 4 Scout | 5 | 24 | 21 |
+| [Llama 4 Maverick][llama4-maverick] | 30 | 6 | 26 |
+| [Llama 3.1 8B][llama31] | 7 | 12 | 13 |
+| [Llama 4 Scout][llama4-scout] | 5 | 24 | 21 |
 
-Maverick is the only Llama model that should stay visible by default. Llama 3.1
-8B and Llama 4 Scout can remain available for players who explicitly want to
-try them, but hiding them from the default bot list keeps the public experience
-cleaner.
+[Maverick][llama4-maverick] is the only Llama model that should stay visible by
+default. [Llama 3.1 8B][llama31] and [Llama 4 Scout][llama4-scout] can remain
+available for players who explicitly want to try them, but hiding them from the
+default bot list keeps the public experience cleaner.
 
 ## Mistral bracket
 
 The first Mistral-family result is already useful. In the table below, each
 score is shown from the row bot's perspective as wins-losses-draws.
 
-| Bot \ Opponent | Nemo | Small 3.2 | Large 3 |
+| Bot \ Opponent | [Nemo][mistral-nemo] | [Small 3.2][mistral-small32] | [Large 3][mistral-large3] |
 | --- | ---: | ---: | ---: |
-| Nemo | - | 0-1-4 | 0-0-1 |
-| Small 3.2 | 4-1-0 | - | 3-0-1 |
-| Large 3 | 1-0-0 | 1-0-3 | - |
+| [Nemo][mistral-nemo] | - | 0-1-4 | 0-0-1 |
+| [Small 3.2][mistral-small32] | 4-1-0 | - | 3-0-1 |
+| [Large 3][mistral-large3] | 1-0-0 | 1-0-3 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| Small 3.2 | 8 | 2 | 8 |
-| Large 3 | 2 | 3 | 5 |
-| Nemo | 1 | 6 | 5 |
+| [Small 3.2][mistral-small32] | 8 | 2 | 8 |
+| [Large 3][mistral-large3] | 2 | 3 | 5 |
+| [Nemo][mistral-nemo] | 1 | 6 | 5 |
 
-The surprising result is how well Small 3.2 performs. It is the clear Mistral
-bot to keep visible. Large 3 can remain available for players who explicitly
-want to try it, but it should not be promoted as a broadly visible opponent.
+The surprising result is how well [Small 3.2][mistral-small32] performs. It is
+the clear Mistral bot to keep visible. [Large 3][mistral-large3] can remain
+available for players who explicitly want to try it, but it should not be
+promoted as a broadly visible opponent.
 
 ## Gemma bracket
 
-The Gemma-family result is less one-sided than the Llama bracket. Gemma 3 4B is
-surprisingly competitive in parts of the bracket, especially for a smaller
-model. As above, each score is shown from the row bot's perspective as
-wins-losses-draws.
+The Gemma-family result is less one-sided than the Llama bracket. [Gemma 3
+4B][gemma3-4b] is surprisingly competitive in parts of the bracket, especially
+for a smaller model. As above, each score is shown from the row bot's
+perspective as wins-losses-draws.
 
-| Bot \ Opponent | Gemma 3 4B | Gemma 3 27B | Gemma 4 31B |
+| Bot \ Opponent | [Gemma 3 4B][gemma3-4b] | [Gemma 3 27B][gemma3-27b] | [Gemma 4 31B][gemma4-31b] |
 | --- | ---: | ---: | ---: |
-| Gemma 3 4B | - | 2-0-4 | 1-2-0 |
-| Gemma 3 27B | 4-0-2 | - | 1-0-6 |
-| Gemma 4 31B | 0-2-1 | 6-0-1 | - |
+| [Gemma 3 4B][gemma3-4b] | - | 2-0-4 | 1-2-0 |
+| [Gemma 3 27B][gemma3-27b] | 4-0-2 | - | 1-0-6 |
+| [Gemma 4 31B][gemma4-31b] | 0-2-1 | 6-0-1 | - |
 
 Aggregating games from both table directions gives:
 
 | Model | Wins | Losses | Draws |
 | --- | ---: | ---: | ---: |
-| Gemma 4 31B | 8 | 4 | 8 |
-| Gemma 3 4B | 5 | 6 | 7 |
-| Gemma 3 27B | 5 | 8 | 13 |
+| [Gemma 4 31B][gemma4-31b] | 8 | 4 | 8 |
+| [Gemma 3 4B][gemma3-4b] | 5 | 6 | 7 |
+| [Gemma 3 27B][gemma3-27b] | 5 | 8 | 13 |
 
-Even with the interesting Gemma 3 4B result, Gemma 4 31B is the Gemma model to
-keep visible by default. The other Gemma models can remain available for
-history and for players who explicitly want to try them.
+Even with the interesting [Gemma 3 4B][gemma3-4b] result, [Gemma 4
+31B][gemma4-31b] is the Gemma model to keep visible by default. The other Gemma
+models can remain available for history and for players who explicitly want to
+try them.
 
 ## What the remaining result sections should add
 
@@ -281,3 +283,13 @@ legal action list?
 
 That is the signal we want before deciding which LLM bots deserve a permanent
 place on the platform.
+
+[gemma3-4b]: https://app.kriegspiel.org/user/llm_gemma3_4b
+[gemma3-27b]: https://app.kriegspiel.org/user/llm_gemma3_27b
+[gemma4-31b]: https://app.kriegspiel.org/user/llm_gemma4_31b
+[llama31]: https://app.kriegspiel.org/user/llm_llama31_8b
+[llama4-maverick]: https://app.kriegspiel.org/user/llm_llama4_maverick
+[llama4-scout]: https://app.kriegspiel.org/user/llm_llama4_scout
+[mistral-large3]: https://app.kriegspiel.org/user/llm_mistral_large3
+[mistral-nemo]: https://app.kriegspiel.org/user/llm_mistral_nemo
+[mistral-small32]: https://app.kriegspiel.org/user/llm_mistral_small32
