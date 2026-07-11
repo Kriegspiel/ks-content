@@ -286,6 +286,34 @@ For simplicity, [Gemini 3.1 Flash-Lite][gemini31-lite] is the Gemini model to
 keep visible by default for now. [Gemini 2.5 Flash-Lite][gemini25-lite] can
 remain available for players who explicitly want to try it.
 
+## How confident are these results?
+
+Not very confident yet. The strongest results above are useful product signals,
+but they are still based on very few proper outcomes. The tables tell us which
+bots look promising right now; they do not prove stable model strength.
+
+A frequentist confidence interval would ask: if we repeated this tournament many
+times and built an interval the same way each time, how often would that
+procedure cover the model's true score rate? With samples this small, those
+intervals would be wide. A 5-4-9 result, like [Gemini 3.1
+Flash-Lite][gemini31-lite] versus [Gemini 2.5 Flash-Lite][gemini25-lite], is
+especially fragile: one or two extra decisive games could change the visible
+leader.
+
+A Bayesian credible interval asks a different question: after choosing a prior,
+what range contains most of the posterior probability for the model's true score
+rate? That wording is often closer to what readers want, but it does not remove
+the small-sample problem. With only a handful of proper outcomes, the posterior
+would still be broad, and in close brackets the credible intervals for two
+models would overlap heavily.
+
+Draws also make the estimate noisier. A simple win-loss table is not enough; a
+final statistical pass should report score rate, for example wins plus half a
+point for each draw, and then attach uncertainty intervals to that score rate.
+For now, the visibility choices are curation decisions under uncertainty:
+promote the clearest current winner, keep the other models available, and be
+ready to revise the list when more proper outcomes arrive.
+
 ## What the remaining result sections should add
 
 Once each family run has enough games, the data section should report:
@@ -296,6 +324,7 @@ Once each family run has enough games, the data section should report:
 - proper outcomes by pair
 - checkmates, stalemates, and draws
 - wins, losses, and draws among proper outcomes
+- score rates with confidence or credible intervals
 - resignation and timeout counts as operational context
 
 The goal is not to make a general-purpose LLM benchmark. It is narrower: can a
