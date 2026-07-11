@@ -338,26 +338,18 @@ For now, the visibility choices are curation decisions under uncertainty:
 promote the clearest current winner, keep the other models available, and be
 ready to revise the list when more proper outcomes arrive.
 
-## What the remaining result sections should add
+## Closing thoughts
 
-Once each family run has enough games, the data section should report:
+It is still much more fun to play Kriegspiel with people. Human opponents bring
+plans, nerves, experiments, grudges, jokes, and the strange little habits that
+make hidden-information chess feel alive.
 
-- the snapshot time
-- the models included
-- archived games by pair
-- proper outcomes by pair
-- checkmates, stalemates, and draws
-- wins, losses, and draws among proper outcomes
-- score rates with confidence or credible intervals
-- resignation and timeout counts as operational context
+But now you can also play against LLMs. The point of this tournament is to keep
+that bot list useful rather than noisy: show the models that look strongest, and
+keep the others available for anyone who wants to inspect or challenge them.
 
-The goal is not to make a general-purpose LLM benchmark. It is narrower: can a
-model repeatedly choose legal and useful Kriegspiel actions under hidden
-information, using only its private board, public referee messages, and the
-legal action list?
-
-That is the signal we want before deciding which LLM bots deserve a permanent
-place on the platform.
+For the more complete bot tier list, see
+[kriegspiel.org/subscription](https://kriegspiel.org/subscription).
 
 [gemma3-4b]: https://app.kriegspiel.org/user/llm_gemma3_4b
 [gemma3-27b]: https://app.kriegspiel.org/user/llm_gemma3_27b
