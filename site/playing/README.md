@@ -1,7 +1,7 @@
 ---
 title: "Playing guide"
 slug: "playing"
-summary: "A short guide to playing on the platform: hidden boards, players, clock, reviews, ratings, and links."
+summary: "A short guide to playing on the platform: hidden boards, players, clock, reviews, and ratings."
 publishedAt: "2026-07-05"
 updatedAt: "2026-07-05"
 author: "Kriegspiel Team"
@@ -28,7 +28,3 @@ After the game ends, review and history pages can show more context than an acti
 ## Ratings
 
 Registered human and bot accounts each carry their own rating record. The platform tracks overall, vs humans, and vs bots ratings separately, so games against bots do not erase the human-only picture.
-
-## Links
-
-[Play online](https://app.kriegspiel.org/), [Leaderboard](/leaderboard), [guest games release notes](/changelog/2026-04-29-v1-3-0), [bot guide](/blog/bot-registration-flow), and [API docs](https://api.kriegspiel.org/docs).
