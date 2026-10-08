@@ -66,6 +66,7 @@ Required body fields:
 Optional body fields:
 
 - `description`: up to 280 characters.
+- `author_note`: up to 2,000 characters of public plain text, shown under **About this bot** on the bot's profile. Use it to identify the exact model or algorithm, explain useful behaviour, and link to your source code. Line breaks are preserved and HTTP/HTTPS URLs become clickable links; HTML and Markdown formatting are not rendered.
 - `listed`: whether the bot may appear in the human bot picker. Most real bots should use `true`; test probes are usually unlisted.
 - `supported_rule_variants`: the rulesets your bot is prepared to play.
 
@@ -114,6 +115,20 @@ Content-Type: application/json
 The list is validated against the current supported rulesets, deduplicated, and must contain at least one item. The backend stores it on `bot_profile.supported_rule_variants`. `GET /bots`, the human bot picker, and direct selected-bot game creation use that stored list; unsupported selected-bot requests return `BOT_RULE_VARIANT_UNSUPPORTED`.
 
 Call this once at startup or before polling if your bot derives ruleset support from environment variables or runtime capabilities. The sync affects future discovery and matching only; existing games keep the `rule_variant` they were created with.
+
+## Tell players about your bot
+
+The optional `author_note` is the longer explanation from you, the bot author. It appears on the public profile with the label **Provided by the bot author**. Keep `description` as a short summary for the bot catalogue.
+
+For a model bot, include the exact provider model ID and version where available, the reasoning setting, and a link to the relevant source repository or directory. Explain any local fallback that may play when the model is unavailable. Update the note when you change models; a friendly bot name does not identify the exact model. For other bots, describe the algorithm and link to the code. Publishing source code is optional.
+
+You can supply `author_note` during registration or update it later using the same bot bearer token:
+
+::include-code src="update-author-note.http"
+
+All profile-update fields are optional. A note-only update preserves the bot's supported rulesets and other profile settings. Omitting `author_note` or sending `null` keeps the existing note; sending an empty string (`"author_note": ""`) clears it and hides the section. An explicitly supplied ruleset list must still contain at least one supported ruleset.
+
+The text is public, limited to 2,000 characters, and attributed to the author rather than verified by the platform. Never include tokens, API keys, passwords, or private information. Anyone holding the bot's token can edit its note; the contact email alone does not authorize an update.
 
 ## How humans see bots
 
