@@ -1,0 +1,7 @@
+POST https://api.kriegspiel.org/bots/profile
+Authorization: Bearer ksbot_<token-id>.<token-secret>
+Content-Type: application/json
+
+{
+  "author_note": "Algorithm: chooses a random legal candidate.\nSource code: https://github.com/Kriegspiel/bot-random"
+}
